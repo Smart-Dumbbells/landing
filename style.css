@@ -1,0 +1,88 @@
+ /*
+         Variables
+        */
+ :root {
+     --primary-color: #febf00;
+     --primary-color-hover: #dda703;
+     --primary-color-border: #febf00;
+ }
+
+ body {
+     --sb-track-color: #f1f1f1;
+     --sb-thumb-color: var(--primary-color);
+     --sb-size: 5px;
+
+     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+ }
+
+ body::-webkit-scrollbar {
+     width: var(--sb-size);
+ }
+
+ body::-webkit-scrollbar-track {
+     background: var(--sb-track-color);
+     border-radius: 10px;
+ }
+
+ body::-webkit-scrollbar-thumb {
+     background: var(--sb-thumb-color);
+     border-radius: 10px;
+ }
+
+ .svg-icon {
+     max-width: 50px;
+     height: auto;
+ }
+
+ .bg-primary-color {
+     background-color: var(--primary-color);
+ }
+
+ .bg-primary-color:hover {
+     background-color: var(--primary-color-hover);
+ }
+
+ .primary-color {
+     color: var(--primary-color);
+ }
+
+ .primary-color-border {
+     border-color: var(--primary-color-border);
+ }
+
+ .primary-color-border:hover {
+     border-color: var(--primary-color-hover);
+ }
+
+ @keyframes customBounce {
+
+     0%,
+     100% {
+         transform: translateY(-25%);
+         animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+     }
+
+     50% {
+         transform: translateY(0);
+         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+     }
+ }
+
+ .image-hero {
+     height: 300px;
+     width: 50%;
+     position: relative;
+     margin-top: 50px;
+     animation: fadeInUpBig;
+     /* referring directly to the animation's @keyframe declaration */
+     animation-duration: 1s;
+     /* don't forget to set a duration! */
+ }
+
+ .image-hero img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
