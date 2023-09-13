@@ -34,4 +34,29 @@ const shadow = function (e) {
 button_animation.addEventListener('mousemove', shadow);
 button_animation.addEventListener('mouseout', function () {
     this.style.boxShadow = 'none';
-})
+});
+
+// On scroll body remove .hidden from #scroll-downs-icon-mouse and add hidden to #scroll-downs-icon
+
+const scrollDownIconMouse = document.querySelector('#scroll-downs-icon-mouse'); // Mouse icon to show on scroll
+const scrollDownIcon = document.querySelector('#scroll-downs-icon'); // Arrow icon to hide on scroll and show when still 
+
+var scrollTimer = -1;
+
+function bodyScroll() {
+    scrollDownIconMouse.classList.remove('hidden');
+    scrollDownIcon.classList.add('hidden');
+
+    if (scrollTimer != -1)
+    clearTimeout(scrollTimer);
+
+    scrollTimer = window.setTimeout("scrollFinished()", 1000);
+}
+
+function scrollFinished() {
+    scrollDownIconMouse.classList.add('hidden');
+    scrollDownIcon.classList.remove('hidden');
+}
+  
+
+window.addEventListener('scroll', bodyScroll);
