@@ -13,7 +13,8 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./style.css" />
 
@@ -165,39 +166,39 @@
                 ovunque tu voglia
             </h1>
             <p
-                class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-sm sm:text-lg animate__animated animate__bounceInDown">
+                class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-md sm:text-lg animate__animated animate__bounceInDown">
                 A professonal
                 website drives sales. Create a beautiful website to impress and engage new customers and establish your
                 business online </p>
         </div>
         <div class="flex justify-center items-center">
             <button
-                class="button-animation focus:outline-none  transition duration-150 ease-in-out lg:text-xl lg:font-bold rounded text-white px-4 sm:px-10 border primary-color-border py-2 sm:py-4 text-sm bg-primary-color animate__animated animate__fadeInLeft">Scopri
+                class="button-animation focus:outline-none  transition duration-150 ease-in-out lg:text-xl font-bold rounded text-white px-4 sm:px-10 border primary-color-border py-2 sm:py-4 text-sm bg-primary-color animate__animated animate__fadeInLeft">Scopri
                 di più</button>
             <button
-                class="ml-4 focus:outline-none bg-transparent transition duration-150 ease-in-out lg:text-xl lg:font-bold rounded border primary-color-border primary-color px-4 sm:px-10 py-2 sm:py-4 text-sm animate__animated animate__fadeInRight">Acquista
+                class="ml-4 focus:outline-none bg-transparent transition duration-150 ease-in-out lg:text-xl font-bold rounded border primary-color-border primary-color px-4 sm:px-10 py-2 sm:py-4 text-sm animate__animated animate__fadeInRight">Acquista
                 <span
                     class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Soon</span>
             </button>
         </div>
 
-        <div class="image-hero">
+        <div class="image-hero w-4/5 lg:w-3/4">
             <img src="https://picsum.photos/1000/400" />
         </div>
+    </div>
 
-        <!-- Bottom arrow at bottom of screen -->
-        <div class="absolute bottom-0 left-0 right-0 mb-10">
-            <div class="flex justify-center" style="animation: customBounce 1s infinite">
-                <div class="animate__animated animate__bounceInDown animate__delay-faster bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center">
-                    <svg id="scroll-downs-icon" class="w-6 h-6 primary-color" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                    <svg class="hidden" id="scroll-downs-icon-mouse" width="40px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-                        <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:var(--primary-color);stroke-width:20px;"/>
-                        <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill:none;stroke:var(--primary-color);stroke-width:20px;"/>
-                    </svg>
-                </div>
+    <!-- Bottom arrow at bottom of screen -->
+    <div class="fixed bottom-0 left-0 right-0 mb-8 z-10" id="scrollPage">
+        <div class="flex justify-center" style="animation: customBounce 1s infinite">
+            <div class="animate__animated animate__bounceInUp animate__delay-faster bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center">
+                <svg id="scroll-downs-icon" class="w-6 h-6 primary-color" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+                <svg class="hidden" id="scroll-downs-icon-mouse" width="40px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                    <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:var(--primary-color);stroke-width:20px;"/>
+                    <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill:none;stroke:var(--primary-color);stroke-width:20px;"/>
+                </svg>
             </div>
         </div>
     </div>
@@ -311,8 +312,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="./script.js"></script>
 </body>
-
 </html>
