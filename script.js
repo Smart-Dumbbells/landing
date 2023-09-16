@@ -54,6 +54,8 @@ function bodyScroll() {
 
     scrollDownIconMouse.classList.remove('hidden');
     scrollDownIcon.classList.add('hidden');
+    scrollDiv.firstElementChild.classList.remove('custom-bounce');
+
 
     if (scrollTimer != -1)
     clearTimeout(scrollTimer);
@@ -64,6 +66,29 @@ function bodyScroll() {
 function scrollFinished() {
     scrollDownIconMouse.classList.add('hidden');
     scrollDownIcon.classList.remove('hidden');
+    // Select the first child of scrollDiv
+    scrollDiv.firstElementChild.classList.add('custom-bounce');
+
+
 }
 
 window.addEventListener('scroll', bodyScroll);
+AOS.init();
+
+// On document reayd
+document.addEventListener('DOMContentLoaded', function () {
+    const e = document.querySelectorAll('#smart-dumbbells .animate_underline');
+    var annotations = [];
+    e.forEach(e => {
+        const annotation = RoughNotation.annotate(e, {
+            type: 'underline',
+            color: 'var(--primary-color)',
+            animate: false,
+            padding: [0, 0, 0, 0],
+        });
+        annotations.push(annotation);
+    });
+
+    RoughNotation.annotationGroup(annotations).show();
+
+});

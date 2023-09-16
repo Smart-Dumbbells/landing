@@ -2,63 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Dumbbells</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#febf00">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#febf00" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ffffff" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body class="bg-gray-100">
-    <!-- <nav class="flex justify-between items-center px-10 py-4">
-        <div class="flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" preserveAspectRatio="xMidYMid meet" version="1.1"
-                viewBox="0 0 648 482" width="648px"
-                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g>
-                    <path style="opacity:0.91" fill="#febf00"
-                        d="M 304.5,-0.5 C 317.167,-0.5 329.833,-0.5 342.5,-0.5C 388.46,16.0611 408.46,48.7277 402.5,97.5C 396.552,117.934 384.886,134.1 367.5,146C 365.19,146.497 362.857,146.663 360.5,146.5C 358.567,142.204 356.567,137.87 354.5,133.5C 384.984,111.536 392.817,83.2026 378,48.5C 360.919,21.5102 336.753,11.6769 305.5,19C 274.369,31.1553 259.869,53.9886 262,87.5C 264.167,99.0159 268.833,109.349 276,118.5C 281.103,124.111 286.603,129.111 292.5,133.5C 290.468,137.851 288.468,142.184 286.5,146.5C 284.473,146.662 282.473,146.495 280.5,146C 262.345,134.574 250.345,118.407 244.5,97.5C 238.54,48.7277 258.54,16.0611 304.5,-0.5 Z" />
-                </g>
-                <g>
-                    <path style="opacity:0.91" fill="#febf00"
-                        d="M 314.5,30.5 C 339.611,28.1345 357.778,38.1345 369,60.5C 376.944,86.1832 369.777,106.183 347.5,120.5C 344.056,115.791 340.723,110.958 337.5,106C 354.945,94.054 358.445,78.8873 348,60.5C 337.961,49.0486 326.128,45.5486 312.5,50C 291.797,61.9819 287.63,78.1485 300,98.5C 303.167,101 306.333,103.5 309.5,106C 306.602,109.905 304.102,114.071 302,118.5C 301.311,119.357 300.478,120.023 299.5,120.5C 278.433,107.497 270.933,88.8307 277,64.5C 283.364,46.2987 295.864,34.9654 314.5,30.5 Z" />
-                </g>
-                <g>
-                    <path style="opacity:0.897" fill="#febf00"
-                        d="M 318.5,61.5 C 327.643,60.1548 334.476,63.4882 339,71.5C 341.984,90.1812 334.151,97.6812 315.5,94C 306.282,87.7587 304.116,79.592 309,69.5C 311.772,66.2166 314.939,63.5499 318.5,61.5 Z" />
-                </g>
-                <g>
-                    <path style="opacity:0.907" fill="#febf00"
-                        d="M 647.5,255.5 C 647.5,269.833 647.5,284.167 647.5,298.5C 643.721,308.13 637.054,315.296 627.5,320C 614.535,321.299 601.535,321.799 588.5,321.5C 588.667,356.835 588.5,392.168 588,427.5C 585.996,432.833 583.163,437.666 579.5,442C 575.294,444.602 570.961,446.936 566.5,449C 554.543,450.532 542.543,450.865 530.5,450C 526.23,449.743 522.23,448.576 518.5,446.5C 517.897,450.804 516.897,454.97 515.5,459C 515.833,459.333 516.167,459.667 516.5,460C 511.978,469.687 504.978,476.854 495.5,481.5C 481.167,481.5 466.833,481.5 452.5,481.5C 440.266,476.958 432.766,468.292 430,455.5C 429.5,410.501 429.333,365.501 429.5,320.5C 358.833,320.5 288.167,320.5 217.5,320.5C 217.667,365.501 217.5,410.501 217,455.5C 214.234,468.292 206.734,476.958 194.5,481.5C 180.167,481.5 165.833,481.5 151.5,481.5C 142.022,476.854 135.022,469.687 130.5,460C 130.833,459.667 131.167,459.333 131.5,459C 130.103,454.97 129.103,450.804 128.5,446.5C 124.77,448.576 120.77,449.743 116.5,450C 104.457,450.865 92.4569,450.532 80.5,449C 72.5362,446.36 66.3695,441.526 62,434.5C 61,432.167 60,429.833 59,427.5C 58.5,392.168 58.3333,356.835 58.5,321.5C 45.4651,321.799 32.4651,321.299 19.5,320C 9.94577,315.296 3.2791,308.13 -0.5,298.5C -0.5,284.167 -0.5,269.833 -0.5,255.5C 4.84056,241.977 14.8406,234.477 29.5,233C 39.1609,232.5 48.8276,232.334 58.5,232.5C 58.3333,197.498 58.5,162.498 59,127.5C 62.5885,115.613 70.4219,108.113 82.5,105C 95.5,104.333 108.5,104.333 121.5,105C 124,105.375 126.333,106.208 128.5,107.5C 131.961,80.9041 147.128,69.5708 174,73.5C 193.216,69.7781 207.216,76.4448 216,93.5C 217.475,140.128 217.975,186.795 217.5,233.5C 288.167,233.5 358.833,233.5 429.5,233.5C 429.036,187.137 429.536,140.804 431,94.5C 439.593,76.3718 453.926,69.3718 474,73.5C 493.348,69.4812 507.348,76.1478 516,93.5C 516.995,98.4535 517.662,103.453 518,108.5C 520.344,106.226 523.178,105.059 526.5,105C 539.167,104.333 551.833,104.333 564.5,105C 579.64,109.133 587.807,118.966 589,134.5C 589.5,167.498 589.667,200.498 589.5,233.5C 602.228,233.08 614.894,233.58 627.5,235C 637.142,239.139 643.809,245.973 647.5,255.5 Z M 159.5,88.5 C 170.231,88.0973 180.898,88.5973 191.5,90C 197.303,93.1067 200.47,97.94 201,104.5C 201.667,219.833 201.667,335.167 201,450.5C 200.576,457.587 197.076,462.42 190.5,465C 180.59,465.18 170.756,465.68 161,466.5C 153.532,465.033 148.532,460.7 146,453.5C 145.333,336.167 145.333,218.833 146,101.5C 148.442,94.8884 152.942,90.555 159.5,88.5 Z M 459.5,88.5 C 468.839,88.3335 478.173,88.5002 487.5,89C 493.932,90.6236 498.432,94.457 501,100.5C 501.667,218.5 501.667,336.5 501,454.5C 498.178,460.656 493.511,464.656 487,466.5C 477.244,465.68 467.41,465.18 457.5,465C 452.402,463.567 448.902,460.4 447,455.5C 446.333,336.833 446.333,218.167 447,99.5C 449.708,94.0793 453.875,90.4127 459.5,88.5 Z M 86.5,120.5 C 96.8387,120.334 107.172,120.5 117.5,121C 122.935,122.769 126.768,126.269 129,131.5C 129.667,228.5 129.667,325.5 129,422.5C 126.744,427.757 122.91,431.257 117.5,433C 106.833,433.667 96.1667,433.667 85.5,433C 80.4268,431.594 76.9268,428.428 75,423.5C 74.3333,326.167 74.3333,228.833 75,131.5C 77.4123,126.252 81.2456,122.586 86.5,120.5 Z M 530.5,120.5 C 541.896,120.091 553.23,120.591 564.5,122C 568.313,124.124 570.813,127.291 572,131.5C 572.667,229.167 572.667,326.833 572,424.5C 570.181,429.336 566.681,432.169 561.5,433C 549.442,433.915 537.442,433.581 525.5,432C 521.806,429.313 519.306,425.813 518,421.5C 517.333,325.167 517.333,228.833 518,132.5C 520.145,126.184 524.312,122.184 530.5,120.5 Z M 28.5,249.5 C 38.5,249.5 48.5,249.5 58.5,249.5C 58.5,268.167 58.5,286.833 58.5,305.5C 48.1613,305.666 37.828,305.5 27.5,305C 20.4923,302.656 16.3256,297.823 15,290.5C 14.3333,281.5 14.3333,272.5 15,263.5C 16.0587,260.382 17.3921,257.382 19,254.5C 22.1806,252.662 25.3473,250.995 28.5,249.5 Z M 217.5,249.5 C 288.167,249.5 358.833,249.5 429.5,249.5C 429.5,268.167 429.5,286.833 429.5,305.5C 358.833,305.5 288.167,305.5 217.5,305.5C 217.5,298.833 217.5,292.167 217.5,285.5C 241.836,285.667 266.169,285.5 290.5,285C 295.299,281.929 296.465,277.762 294,272.5C 293.097,271.299 291.931,270.465 290.5,270C 266.169,269.5 241.836,269.333 217.5,269.5C 217.5,262.833 217.5,256.167 217.5,249.5 Z M 589.5,249.5 C 599.506,249.334 609.506,249.5 619.5,250C 626.784,251.618 630.951,256.118 632,263.5C 639.292,299.041 625.125,313.041 589.5,305.5C 589.5,286.833 589.5,268.167 589.5,249.5 Z" />
-                </g>
-                <g>
-                    <path style="opacity:0.862" fill="#febf00"
-                        d="M 311.5,269.5 C 321.506,269.334 331.506,269.5 341.5,270C 342.579,270.956 343.745,271.789 345,272.5C 347.558,277.718 346.391,281.884 341.5,285C 331.167,285.667 320.833,285.667 310.5,285C 303.761,279.191 304.094,274.025 311.5,269.5 Z" />
-                </g>
-            </svg>
-        </div>
-        <div class="flex items-center">
-            <a href="/dashboard"
-                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
-            <a href="/team"
-                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Team</a>
-            <a href="/projects"
-                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
-            <a href="/reports"
-                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Reports</a>
-        </div>
-    </nav> -->
     <nav class="bg-gray-800 fixed w-full z-10 top-0">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div class="relative flex h-16 items-center justify-between">
@@ -87,27 +49,31 @@
                         <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                             alt="Your Company"> -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" preserveAspectRatio="xMidYMid meet"
-                            version="1.1" viewBox="0 0 648 482" width="648px"
-                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            version="1.1" viewBox="0 0 648 482" width="648px" style="
+                  shape-rendering: geometricPrecision;
+                  text-rendering: geometricPrecision;
+                  image-rendering: optimizeQuality;
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                " xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g>
-                                <path style="opacity:0.91" fill="#febf00"
+                                <path style="opacity: 0.91" fill="#febf00"
                                     d="M 304.5,-0.5 C 317.167,-0.5 329.833,-0.5 342.5,-0.5C 388.46,16.0611 408.46,48.7277 402.5,97.5C 396.552,117.934 384.886,134.1 367.5,146C 365.19,146.497 362.857,146.663 360.5,146.5C 358.567,142.204 356.567,137.87 354.5,133.5C 384.984,111.536 392.817,83.2026 378,48.5C 360.919,21.5102 336.753,11.6769 305.5,19C 274.369,31.1553 259.869,53.9886 262,87.5C 264.167,99.0159 268.833,109.349 276,118.5C 281.103,124.111 286.603,129.111 292.5,133.5C 290.468,137.851 288.468,142.184 286.5,146.5C 284.473,146.662 282.473,146.495 280.5,146C 262.345,134.574 250.345,118.407 244.5,97.5C 238.54,48.7277 258.54,16.0611 304.5,-0.5 Z" />
                             </g>
                             <g>
-                                <path style="opacity:0.91" fill="#febf00"
+                                <path style="opacity: 0.91" fill="#febf00"
                                     d="M 314.5,30.5 C 339.611,28.1345 357.778,38.1345 369,60.5C 376.944,86.1832 369.777,106.183 347.5,120.5C 344.056,115.791 340.723,110.958 337.5,106C 354.945,94.054 358.445,78.8873 348,60.5C 337.961,49.0486 326.128,45.5486 312.5,50C 291.797,61.9819 287.63,78.1485 300,98.5C 303.167,101 306.333,103.5 309.5,106C 306.602,109.905 304.102,114.071 302,118.5C 301.311,119.357 300.478,120.023 299.5,120.5C 278.433,107.497 270.933,88.8307 277,64.5C 283.364,46.2987 295.864,34.9654 314.5,30.5 Z" />
                             </g>
                             <g>
-                                <path style="opacity:0.897" fill="#febf00"
+                                <path style="opacity: 0.897" fill="#febf00"
                                     d="M 318.5,61.5 C 327.643,60.1548 334.476,63.4882 339,71.5C 341.984,90.1812 334.151,97.6812 315.5,94C 306.282,87.7587 304.116,79.592 309,69.5C 311.772,66.2166 314.939,63.5499 318.5,61.5 Z" />
                             </g>
                             <g>
-                                <path style="opacity:0.907" fill="#febf00"
+                                <path style="opacity: 0.907" fill="#febf00"
                                     d="M 647.5,255.5 C 647.5,269.833 647.5,284.167 647.5,298.5C 643.721,308.13 637.054,315.296 627.5,320C 614.535,321.299 601.535,321.799 588.5,321.5C 588.667,356.835 588.5,392.168 588,427.5C 585.996,432.833 583.163,437.666 579.5,442C 575.294,444.602 570.961,446.936 566.5,449C 554.543,450.532 542.543,450.865 530.5,450C 526.23,449.743 522.23,448.576 518.5,446.5C 517.897,450.804 516.897,454.97 515.5,459C 515.833,459.333 516.167,459.667 516.5,460C 511.978,469.687 504.978,476.854 495.5,481.5C 481.167,481.5 466.833,481.5 452.5,481.5C 440.266,476.958 432.766,468.292 430,455.5C 429.5,410.501 429.333,365.501 429.5,320.5C 358.833,320.5 288.167,320.5 217.5,320.5C 217.667,365.501 217.5,410.501 217,455.5C 214.234,468.292 206.734,476.958 194.5,481.5C 180.167,481.5 165.833,481.5 151.5,481.5C 142.022,476.854 135.022,469.687 130.5,460C 130.833,459.667 131.167,459.333 131.5,459C 130.103,454.97 129.103,450.804 128.5,446.5C 124.77,448.576 120.77,449.743 116.5,450C 104.457,450.865 92.4569,450.532 80.5,449C 72.5362,446.36 66.3695,441.526 62,434.5C 61,432.167 60,429.833 59,427.5C 58.5,392.168 58.3333,356.835 58.5,321.5C 45.4651,321.799 32.4651,321.299 19.5,320C 9.94577,315.296 3.2791,308.13 -0.5,298.5C -0.5,284.167 -0.5,269.833 -0.5,255.5C 4.84056,241.977 14.8406,234.477 29.5,233C 39.1609,232.5 48.8276,232.334 58.5,232.5C 58.3333,197.498 58.5,162.498 59,127.5C 62.5885,115.613 70.4219,108.113 82.5,105C 95.5,104.333 108.5,104.333 121.5,105C 124,105.375 126.333,106.208 128.5,107.5C 131.961,80.9041 147.128,69.5708 174,73.5C 193.216,69.7781 207.216,76.4448 216,93.5C 217.475,140.128 217.975,186.795 217.5,233.5C 288.167,233.5 358.833,233.5 429.5,233.5C 429.036,187.137 429.536,140.804 431,94.5C 439.593,76.3718 453.926,69.3718 474,73.5C 493.348,69.4812 507.348,76.1478 516,93.5C 516.995,98.4535 517.662,103.453 518,108.5C 520.344,106.226 523.178,105.059 526.5,105C 539.167,104.333 551.833,104.333 564.5,105C 579.64,109.133 587.807,118.966 589,134.5C 589.5,167.498 589.667,200.498 589.5,233.5C 602.228,233.08 614.894,233.58 627.5,235C 637.142,239.139 643.809,245.973 647.5,255.5 Z M 159.5,88.5 C 170.231,88.0973 180.898,88.5973 191.5,90C 197.303,93.1067 200.47,97.94 201,104.5C 201.667,219.833 201.667,335.167 201,450.5C 200.576,457.587 197.076,462.42 190.5,465C 180.59,465.18 170.756,465.68 161,466.5C 153.532,465.033 148.532,460.7 146,453.5C 145.333,336.167 145.333,218.833 146,101.5C 148.442,94.8884 152.942,90.555 159.5,88.5 Z M 459.5,88.5 C 468.839,88.3335 478.173,88.5002 487.5,89C 493.932,90.6236 498.432,94.457 501,100.5C 501.667,218.5 501.667,336.5 501,454.5C 498.178,460.656 493.511,464.656 487,466.5C 477.244,465.68 467.41,465.18 457.5,465C 452.402,463.567 448.902,460.4 447,455.5C 446.333,336.833 446.333,218.167 447,99.5C 449.708,94.0793 453.875,90.4127 459.5,88.5 Z M 86.5,120.5 C 96.8387,120.334 107.172,120.5 117.5,121C 122.935,122.769 126.768,126.269 129,131.5C 129.667,228.5 129.667,325.5 129,422.5C 126.744,427.757 122.91,431.257 117.5,433C 106.833,433.667 96.1667,433.667 85.5,433C 80.4268,431.594 76.9268,428.428 75,423.5C 74.3333,326.167 74.3333,228.833 75,131.5C 77.4123,126.252 81.2456,122.586 86.5,120.5 Z M 530.5,120.5 C 541.896,120.091 553.23,120.591 564.5,122C 568.313,124.124 570.813,127.291 572,131.5C 572.667,229.167 572.667,326.833 572,424.5C 570.181,429.336 566.681,432.169 561.5,433C 549.442,433.915 537.442,433.581 525.5,432C 521.806,429.313 519.306,425.813 518,421.5C 517.333,325.167 517.333,228.833 518,132.5C 520.145,126.184 524.312,122.184 530.5,120.5 Z M 28.5,249.5 C 38.5,249.5 48.5,249.5 58.5,249.5C 58.5,268.167 58.5,286.833 58.5,305.5C 48.1613,305.666 37.828,305.5 27.5,305C 20.4923,302.656 16.3256,297.823 15,290.5C 14.3333,281.5 14.3333,272.5 15,263.5C 16.0587,260.382 17.3921,257.382 19,254.5C 22.1806,252.662 25.3473,250.995 28.5,249.5 Z M 217.5,249.5 C 288.167,249.5 358.833,249.5 429.5,249.5C 429.5,268.167 429.5,286.833 429.5,305.5C 358.833,305.5 288.167,305.5 217.5,305.5C 217.5,298.833 217.5,292.167 217.5,285.5C 241.836,285.667 266.169,285.5 290.5,285C 295.299,281.929 296.465,277.762 294,272.5C 293.097,271.299 291.931,270.465 290.5,270C 266.169,269.5 241.836,269.333 217.5,269.5C 217.5,262.833 217.5,256.167 217.5,249.5 Z M 589.5,249.5 C 599.506,249.334 609.506,249.5 619.5,250C 626.784,251.618 630.951,256.118 632,263.5C 639.292,299.041 625.125,313.041 589.5,305.5C 589.5,286.833 589.5,268.167 589.5,249.5 Z" />
                             </g>
                             <g>
-                                <path style="opacity:0.862" fill="#febf00"
+                                <path style="opacity: 0.862" fill="#febf00"
                                     d="M 311.5,269.5 C 321.506,269.334 331.506,269.5 341.5,270C 342.579,270.956 343.745,271.789 345,272.5C 347.558,277.718 346.391,281.884 341.5,285C 331.167,285.667 320.833,285.667 310.5,285C 303.761,279.191 304.094,274.025 311.5,269.5 Z" />
                             </g>
                         </svg>
@@ -115,14 +81,15 @@
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
                             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                            <a href="#home" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
                                 aria-current="page">Home</a>
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
-                            <a href="#"
+                            <a href="#about"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Chi
+                                siamo</a>
+                            <a href="#scoreboard"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Classifica</a>
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact us</a>
+                            <a href="#contact"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contattaci</a>
                         </div>
                     </div>
                 </div>
@@ -130,103 +97,149 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
+        <div class="hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pb-3 pt-2">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                <a href="#home" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
                     aria-current="page">Home</a>
-                <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
-                <a href="#"
+                <a href="#about"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Chi
+                    siamo</a>
+                <a href="#scoreboard"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Classifica</a>
-                <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+                <a href="#contact"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contattaci</a>
             </div>
         </div>
         <script>
-            const btn = document.querySelector('button[aria-expanded]');
-            const menu = document.getElementById(btn.getAttribute('aria-controls'));
+            const btn = document.querySelector("button[aria-expanded]");
+            const menu = document.getElementById(btn.getAttribute("aria-controls"));
 
-            btn.addEventListener('click', () => {
-                const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
-                btn.setAttribute('aria-expanded', !expanded);
+            btn.addEventListener("click", () => {
+                const expanded =
+                    btn.getAttribute("aria-expanded") === "true" || false;
+                btn.setAttribute("aria-expanded", !expanded);
                 menu.hidden = !menu.hidden;
             });
         </script>
-
     </nav>
 
-    <div class="container mx-auto flex flex-col items-center py-12 sm:py-24 mt-14">
-        <div class="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
+    <div class="container mx-auto flex flex-col items-center py-12 sm:py-24 mt-14" id="home">
+        <div class="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 sm:mb-10">
             <h1
-                class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10 animate__animated animate__bounceInDown">
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10" 
+                data-aos="zoom-in"
+                data-aos-delay="100">
                 Una nuova strada per
-                <span class="primary-color">Allenarsi</span>
+                <span class="primary-color">allenarsi</span>
                 ovunque tu voglia
             </h1>
+            
             <p
-                class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-md sm:text-lg animate__animated animate__bounceInDown">
-                A professonal
-                website drives sales. Create a beautiful website to impress and engage new customers and establish your
-                business online </p>
+                class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-md sm:text-lg"
+                data-aos="zoom-in"
+                data-aos-delay="150">
+                A professonal website drives sales. Create a beautiful website to
+                impress and engage new customers and establish your business online
+            </p>
         </div>
         <div class="flex justify-center items-center">
+            <button onclick="window.location.href='#smart-dumbbells'"
+                class="button-animation focus:outline-none transition duration-150 ease-in-out lg:text-xl font-bold rounded text-white px-4 sm:px-10 border primary-color-border py-2 sm:py-4 text-sm bg-primary-color"
+                data-aos="fade-right"
+                data-aos-delay="200">
+                Scopri di più
+            </button>
             <button
-                class="button-animation focus:outline-none  transition duration-150 ease-in-out lg:text-xl font-bold rounded text-white px-4 sm:px-10 border primary-color-border py-2 sm:py-4 text-sm bg-primary-color animate__animated animate__fadeInLeft">Scopri
-                di più</button>
-            <button
-                class="ml-4 focus:outline-none bg-transparent transition duration-150 ease-in-out lg:text-xl font-bold rounded border primary-color-border primary-color px-4 sm:px-10 py-2 sm:py-4 text-sm animate__animated animate__fadeInRight">Acquista
+                class="ml-4 focus:outline-none bg-transparent transition duration-150 ease-in-out lg:text-xl font-bold rounded border primary-color-border primary-color px-4 sm:px-10 py-2 sm:py-4 text-sm"
+                data-aos="fade-left"
+                data-aos-delay="250">
+                Acquista
                 <span
                     class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Soon</span>
             </button>
         </div>
 
-        <div class="image-hero w-4/5 lg:w-3/4">
+        <div class="image-hero w-4/5 lg:w-3/4" data-aos="fade-up" data-aos-delay="300">
             <img src="https://picsum.photos/1000/400" />
+        </div>
+    </div>
+
+    <!-- Left text and right image -->
+
+    <div class="flex flex-row items-center py-12 sm:py-20 bg-gray-300 mt-24" id="smart-dumbbells">
+        <div class="mx-auto flex flex-col lg:flex-row items-center gap-x-20 align-middle justify-center mx-10 max-sm:mx-5">
+            <div class="flex flex-col mb-5 sm:mb-10 lg:w-1/2">
+                <h1
+                    class="text-2xl max-sm:text-center text-left w-full sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-800 font-black leading-7 md:leading-10" data-aos="fade-right">
+                    Smart Dumbbells
+                </h1>
+                <p
+                    class="mt-5 sm:mt-10 w-full text-gray-500 font-normal text-md sm:text-lg text-justify" data-aos="fade-right">
+                    L’attività fisica è spesso <span class="font-bold text-gray-800 animate_underline">noiosa</span> da praticare in
+                    solitudine e, per rimediare, abbiamo inventato
+                    <span class="font-bold text-gray-800 animate_underline">Smart Dumbbells</span>. Con esso potrai allenarti ovunque tu
+                    voglia, divertendoti, grazie ad un nuovo modo di fare
+                    fitness. <br><br>
+                    Smart Dumbbells è un attrezzo che ti permette di allenarti in modo 
+                    <span
+                        class="font-bold text-gray-800 animate_underline">divertente e coinvolgente</span>,
+                         grazie
+                    ad un avatar virtuale che cresce con te man mano che ti alleni, grazie ad un collegamento costante
+                    con il tuo smartphone 💪.
+                </p>
+            </div>
+            <img class="max-lg:hidden rounded-xl" src="https://picsum.photos/300/400" data-aos="fade-left" />
+            <img class="hidden max-lg:block rounded-xl" src="https://picsum.photos/600/300" data-aos="fade-left" />
         </div>
     </div>
 
     <!-- Bottom arrow at bottom of screen -->
     <div class="fixed bottom-0 left-0 right-0 mb-8 z-10" id="scrollPage">
-        <div class="flex justify-center" style="animation: customBounce 1s infinite">
-            <div class="animate__animated animate__bounceInUp animate__delay-faster bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center">
-                <svg id="scroll-downs-icon" class="w-6 h-6 primary-color" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="flex justify-center custom-bounce">
+            <div
+                class="animate__animated animate__bounceInUp animate__delay-faster bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center">
+                <svg id="scroll-downs-icon" class="w-6 h-6 primary-color" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                     <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
-                <svg class="hidden" id="scroll-downs-icon-mouse" width="40px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-                    <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:var(--primary-color);stroke-width:20px;"/>
-                    <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill:none;stroke:var(--primary-color);stroke-width:20px;"/>
+                <svg class="hidden" id="scroll-downs-icon-mouse" width="40px" height="100%" viewBox="0 0 247 390"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 1.5;
+            ">
+                    <path id="wheel" d="M123.359,79.775l0,72.843" style="
+                fill: none;
+                stroke: var(--primary-color);
+                stroke-width: 20px;
+              " />
+                    <path id="mouse"
+                        d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                        style="
+                fill: none;
+                stroke: var(--primary-color);
+                stroke-width: 20px;
+              " />
                 </svg>
             </div>
         </div>
     </div>
-    <div class="mx-auto flex flex-col items-center py-12 sm:py-24 bg-gray-300 mt-24">
-        <div class="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
-            <h1
-                class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10 animate__animated animate__bounceInDown">
-                Una nuova strada per
-                <span class="primary-color">Allenarsi</span>
-                ovunque tu voglia
-            </h1>
-            <p
-                class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-sm sm:text-lg animate__animated animate__bounceInDown">
-                A professonal
-                website drives sales. Create a beautiful website to impress and engage new customers and establish your
-                business online </p>
-        </div>
-    </div>
+
     <footer class="bg-white dark:bg-gray-800">
         <div class="container px-6 py-12 mx-auto">
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
                 <div class="sm:col-span-2">
                     <h1 class="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">
-                        Iscriviti alla nostra newsletter per rimanere aggiornato.</h1>
+                        Iscriviti alla nostra newsletter per rimanere aggiornato.
+                    </h1>
 
                     <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
                         <input id="email" type="text"
                             class="px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
-                            placeholder="Indirizzo mail">
+                            placeholder="Indirizzo mail" />
 
                         <button
                             class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
@@ -236,7 +249,9 @@
                 </div>
 
                 <div>
-                    <p class="font-semibold text-gray-800 dark:text-white">Quick Link</p>
+                    <p class="font-semibold text-gray-800 dark:text-white">
+                        Quick Link
+                    </p>
 
                     <div class="flex flex-col items-start mt-3 space-y-2">
                         <a href="#"
@@ -251,7 +266,9 @@
                 </div>
 
                 <div>
-                    <p class="font-semibold text-gray-800 dark:text-white">Industries</p>
+                    <p class="font-semibold text-gray-800 dark:text-white">
+                        Industries
+                    </p>
 
                     <div class="flex flex-col items-start mt-3 space-y-2">
                         <a href="#"
@@ -267,11 +284,11 @@
                 </div>
             </div>
 
-            <hr class="my-6 border-gray-200 md:my-8 dark:border-gray-700">
+            <hr class="my-6 border-gray-200 md:my-8 dark:border-gray-700" />
 
             <div class="flex items-center justify-between">
                 <a href="#">
-                    <img class="w-auto h-24" src="./assets/logos/nobg_white.png" alt="Logo">
+                    <img class="w-auto h-24" src="./assets/logos/nobg_white.png" alt="Logo" />
                 </a>
 
                 <div class="flex -mx-2">
@@ -311,6 +328,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+
     <script src="./script.js"></script>
 </body>
+
 </html>

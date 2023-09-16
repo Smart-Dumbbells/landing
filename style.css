@@ -1,101 +1,115 @@
- /*
+/*
          Variables
         */
- :root {
-     --primary-color: #febf00;
-     --primary-color-hover: #dda703;
-     --primary-color-border: #febf00;
- }
+:root {
+    --primary-color: #febf00;
+    --primary-color-hover: #dda703;
+    --primary-color-border: #febf00;
+    --sb-track-color: rgb(243 244 246);
+    --sb-thumb-color: var(--primary-color);
+    --sb-size: 5px;
+}
 
- body {
-     --sb-track-color: rgb(243 244 246);
-     --sb-thumb-color: var(--primary-color);
-     --sb-size: 5px;
+html {
+    scroll-behavior: smooth;
+}
 
-     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
- }
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+    height: var(--sb-size);
+}
 
- body::-webkit-scrollbar {
-     width: var(--sb-size);
- }
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
 
- body::-webkit-scrollbar-track {
-     background: var(--sb-track-color);
-     border-radius: 10px;
- }
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+}
 
- body::-webkit-scrollbar-thumb {
-     background: var(--sb-thumb-color);
-     border-radius: 10px;
- }
+.svg-icon {
+    max-width: 50px;
+    height: auto;
+}
 
- .svg-icon {
-     max-width: 50px;
-     height: auto;
- }
+.bg-primary-color {
+    background-color: var(--primary-color);
+}
 
- .bg-primary-color {
-     background-color: var(--primary-color);
- }
+.bg-primary-color:hover {
+    background-color: var(--primary-color-hover);
+}
 
- .bg-primary-color:hover {
-     background-color: var(--primary-color-hover);
- }
+.primary-color {
+    color: var(--primary-color);
+}
 
- .primary-color {
-     color: var(--primary-color);
- }
+.primary-color-border {
+    border-color: var(--primary-color-border);
+}
 
- .primary-color-border {
-     border-color: var(--primary-color-border);
- }
+.primary-color-border:hover {
+    border-color: var(--primary-color-hover);
+}
 
- .primary-color-border:hover {
-     border-color: var(--primary-color-hover);
- }
+@keyframes customBounce {
 
- @keyframes customBounce {
+    0%,
+    100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
 
-     0%,
-     100% {
-         transform: translateY(-25%);
-         animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-     }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
 
-     50% {
-         transform: translateY(0);
-         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-     }
- }
+.image-hero {
+    height: 350px;
+    position: relative;
+    margin-top: 50px;
+    animation: fadeInUpBig;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+    /* don't forget to set a duration! */
+}
 
- .image-hero {
-     height: 350px;
-     position: relative;
-     margin-top: 50px;
-     animation: fadeInUpBig;
-     /* referring directly to the animation's @keyframe declaration */
-     animation-duration: 1s;
-     /* don't forget to set a duration! */
- }
+.image-hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 3px var(--primary-color);
+}
 
- .image-hero img {
-     height: 100%;
-     width: 100%;
-     object-fit: cover;
-     border-radius: 5px;
-     box-shadow: 0 0 3px var(--primary-color);
- }
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
 
- @keyframes scroll {
-     0% {
-         transform: translateY(0);
-     }
+    30% {
+        transform: translateY(100px);
+    }
+}
 
-     30% {
-         transform: translateY(100px);
-     }
- }
+#scroll-downs-icon-mouse>#wheel {
+    animation: scroll ease 1.5s infinite;
+}
 
- #scroll-downs-icon-mouse>#wheel {
-     animation: scroll ease 1.5s infinite;
- }
+.custom-bounce {
+    animation: customBounce 1s infinite;
+}
+
+.animate_underline {
+    position: relative;
+    display: inline-block;
+}
+
+.animate_box {
+    position: relative;
+    display: inline-block;
+}
