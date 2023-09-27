@@ -75,7 +75,7 @@ function scrollFinished() {
 window.addEventListener('scroll', bodyScroll);
 AOS.init();
 
-// On document reayd
+// On document ready
 document.addEventListener('DOMContentLoaded', function () {
     const e = document.querySelectorAll('#smart-dumbbells .animate_underline');
     var annotations = [];
