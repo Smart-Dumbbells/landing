@@ -190,13 +190,37 @@
         </div>
     </div>
 
-    <div class="items-center py-6 sm:py-10 bg-gray-300" id="about">
-        <img src="./assets/images/manubrio.png" alt="Immagine dell'interno di un manubrio"
-            class="w-2/3 max-sm:w-3/4 mx-auto max-lg:hidden" usemap=".image-map" data-aos="fade-right" />
+    <div class="items-center py-6 sm:py-10 bg-gray-300 relative">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 771 324" class="w-2/3 max-sm:w-3/4 mx-auto max-lg:hidden">
+            <image width="771" height="324" xlink:href="./assets/images/manubrio.png"></image>
+            <rect x="8" y="19" fill="#fff" opacity="0" width="167" height="106" id="mpu"></rect>
+            <rect x="314" y="0" fill="#fff" opacity="0" width="375" height="113" id="arduino"></rect>
+            <rect x="144" y="129" fill="#fff" opacity="0" width="287" height="79" id="bluetooth"></rect>
+            <rect x="84" y="212" fill="#fff" opacity="0" width="233" height="50" id="battery"></rect>
+            <rect x="91" y="142" fill="#fff" opacity="0" width="50" height="75" id="battery"></rect>
+        </svg>
 
-        <map name="image-map">
-            <area target="" alt="Manubrio" title="Manubrio" href="" coords="0,0,100,100" shape="rect">
-        </map>
+        <div id="mpu-description" class="absolute hidden">
+            <p>
+                Test mpu
+            </p>
+        </div>
+        <div id="arduino-description" class="absolute hidden">
+            <p>
+                Test arduino
+            </p>
+        </div>
+        <div id="bluetooth-description" class="absolute hidden">
+            <p>
+                Test bluetooth
+            </p>
+        </div>
+        <div id="battery-description" class="absolute hidden">
+            <p>
+                Test battery
+            </p>
+        </div>
     </div>
 
     <!-- Bottom arrow at bottom of screen -->

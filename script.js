@@ -68,12 +68,54 @@ function scrollFinished() {
     scrollDownIcon.classList.remove('hidden');
     // Select the first child of scrollDiv
     scrollDiv.firstElementChild.classList.add('custom-bounce');
-
-
 }
 
 window.addEventListener('scroll', bodyScroll);
 AOS.init();
+
+function interactiveImage() {
+    const mpu = document.querySelector('#mpu');
+    const arduino = document.querySelector('#arduino');
+    const bluetooth = document.querySelector('#bluetooth');
+    const battery = document.querySelector('#battery');
+
+    const mpuDescription = document.querySelector('#mpu-description');
+    const arduinoDescription = document.querySelector('#arduino-description');
+    const bluetoothDescription = document.querySelector('#bluetooth-description');
+    const batteryDescription = document.querySelector('#battery-description');
+
+    mpu.addEventListener('mouseover', function () {
+        mpuDescription.classList.remove('hidden');
+    });
+
+    mpu.addEventListener('mouseout', function () {
+        mpuDescription.classList.add('hidden');
+    });
+
+    arduino.addEventListener('mouseover', function () {
+        arduinoDescription.classList.remove('hidden');
+    });
+
+    arduino.addEventListener('mouseout', function () {
+        arduinoDescription.classList.add('hidden');
+    });
+
+    bluetooth.addEventListener('mouseover', function () {
+        bluetoothDescription.classList.remove('hidden');
+    });
+
+    bluetooth.addEventListener('mouseout', function () {
+        bluetoothDescription.classList.add('hidden');
+    });
+
+    battery.addEventListener('mouseover', function () {
+        batteryDescription.classList.remove('hidden');
+    });
+
+    battery.addEventListener('mouseout', function () {
+        batteryDescription.classList.add('hidden');
+    });
+}
 
 // On document ready
 document.addEventListener('DOMContentLoaded', function () {
@@ -91,4 +133,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     RoughNotation.annotationGroup(annotations).show();
 
+    interactiveImage();
 });
