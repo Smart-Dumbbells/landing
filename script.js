@@ -58,7 +58,7 @@ function bodyScroll() {
 
 
     if (scrollTimer != -1)
-    clearTimeout(scrollTimer);
+        clearTimeout(scrollTimer);
 
     scrollTimer = window.setTimeout("scrollFinished()", 500);
 }
@@ -71,51 +71,7 @@ function scrollFinished() {
 }
 
 window.addEventListener('scroll', bodyScroll);
-AOS.init();
 
-function interactiveImage() {
-    const mpu = document.querySelector('#mpu');
-    const arduino = document.querySelector('#arduino');
-    const bluetooth = document.querySelector('#bluetooth');
-    const battery = document.querySelector('#battery');
-
-    const mpuDescription = document.querySelector('#mpu-description');
-    const arduinoDescription = document.querySelector('#arduino-description');
-    const bluetoothDescription = document.querySelector('#bluetooth-description');
-    const batteryDescription = document.querySelector('#battery-description');
-
-    mpu.addEventListener('mouseover', function () {
-        mpuDescription.classList.remove('hidden');
-    });
-
-    mpu.addEventListener('mouseout', function () {
-        mpuDescription.classList.add('hidden');
-    });
-
-    arduino.addEventListener('mouseover', function () {
-        arduinoDescription.classList.remove('hidden');
-    });
-
-    arduino.addEventListener('mouseout', function () {
-        arduinoDescription.classList.add('hidden');
-    });
-
-    bluetooth.addEventListener('mouseover', function () {
-        bluetoothDescription.classList.remove('hidden');
-    });
-
-    bluetooth.addEventListener('mouseout', function () {
-        bluetoothDescription.classList.add('hidden');
-    });
-
-    battery.addEventListener('mouseover', function () {
-        batteryDescription.classList.remove('hidden');
-    });
-
-    battery.addEventListener('mouseout', function () {
-        batteryDescription.classList.add('hidden');
-    });
-}
 
 // On document ready
 document.addEventListener('DOMContentLoaded', function () {
@@ -133,5 +89,50 @@ document.addEventListener('DOMContentLoaded', function () {
 
     RoughNotation.annotationGroup(annotations).show();
 
-    interactiveImage();
+    const mpu = document.querySelector('#mpu');
+    const arduino = document.querySelector('#arduino');
+    const bluetooth = document.querySelector('#bluetooth');
+    const batteries = document.querySelectorAll('#battery');
+
+    const mpuCallout = document.querySelector('#mpu-callout');
+    const arduinoCallout = document.querySelector('#arduino-callout');
+    const bluetoothCallout = document.querySelector('#bluetooth-callout');
+    const batteryCallout = document.querySelector('#battery-callout');
+
+    $(mpu).on('click touchstart mouseover', function () {
+        $(mpuCallout).fadeIn("fast");
+    });
+
+    $(mpu).on('mouseout touchend', function () {
+        $(mpuCallout).delay(300).fadeOut("fast");
+    });
+
+    $(arduino).on('click touchstart mouseover', function () {
+        $(arduinoCallout).fadeIn("fast");
+    });
+
+    $(arduino).on('mouseout touchend', function () {
+        $(arduinoCallout).delay(300).fadeOut("fast");
+    });
+
+    $(bluetooth).on('click touchstart mouseover', function () {
+        $(bluetoothCallout).fadeIn("fast");
+    });
+
+    $(bluetooth).on('mouseout touchend', function () {
+        $(bluetoothCallout).delay(300).fadeOut("fast");
+    });
+
+    batteries.forEach(battery => {
+        $(battery).on('click touchstart mouseover', function () {
+            $(batteryCallout).fadeIn("fast");
+        });
+
+        $(battery).on('mouseout touchend', function () {
+            $(batteryCallout).delay(300).fadeOut("fast");
+        });
+    });
+
+    AOS.init();
+    $("#loader").fadeOut("slow");
 });

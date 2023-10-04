@@ -15,12 +15,17 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body class="bg-gray-100">
+    <div class="loader-container" id="loader">
+        <span class="loader"></span>
+      </div>
     <nav class="bg-gray-800 fixed w-full z-10 top-0">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div class="relative flex h-16 items-center justify-between">
@@ -90,6 +95,12 @@
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Classifica</a>
                             <a href="#contact"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contattaci</a>
+                            <!-- Language -->
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">EN</a>
+
+
+                            
                         </div>
                     </div>
                 </div>
@@ -112,14 +123,14 @@
             </div>
         </div>
         <script>
-            const btn = document.querySelector("button[aria-expanded]");
-            const menu = document.getElementById(btn.getAttribute("aria-controls"));
+            // Menu button
+            const mobileMenuButton = document.querySelector(
+                ".absolute.inset-y-0.left-0.flex.items-center.sm\\:hidden"
+            );
+            const mobileMenu = document.querySelector("#mobile-menu");
 
-            btn.addEventListener("click", () => {
-                const expanded =
-                    btn.getAttribute("aria-expanded") === "true" || false;
-                btn.setAttribute("aria-expanded", !expanded);
-                menu.hidden = !menu.hidden;
+            mobileMenuButton.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
             });
         </script>
     </nav>
@@ -190,36 +201,68 @@
         </div>
     </div>
 
-    <div class="items-center py-6 sm:py-10 bg-gray-300 relative">
+    <div class="items-center py-6 sm:py-10 bg-gray-300 relative max-lg:hidden">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 771 324" class="w-2/3 max-sm:w-3/4 mx-auto max-lg:hidden">
+            viewBox="0 0 771 324" class="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto callout-rect" data-aos="fade-up" data-aos-delay="100">
             <image width="771" height="324" xlink:href="./assets/images/manubrio.png"></image>
-            <rect x="8" y="19" fill="#fff" opacity="0" width="167" height="106" id="mpu"></rect>
-            <rect x="314" y="0" fill="#fff" opacity="0" width="375" height="113" id="arduino"></rect>
-            <rect x="144" y="129" fill="#fff" opacity="0" width="287" height="79" id="bluetooth"></rect>
-            <rect x="84" y="212" fill="#fff" opacity="0" width="233" height="50" id="battery"></rect>
-            <rect x="91" y="142" fill="#fff" opacity="0" width="50" height="75" id="battery"></rect>
-        </svg>
+            <rect x="8" y="19" width="167" height="106" id="mpu"></rect>
+            <rect x="314" y="0" width="375" height="113" id="arduino"></rect>
+            <rect x="150" y="129" width="250" height="70" id="bluetooth"></rect>
+            <rect x="84" y="212" width="233" height="60" id="battery"></rect>
+            <rect x="91" y="142" width="55" height="80" id="battery"></rect>
+            <circle cx="100" cy="60" r="10" />
+            <circle cx="500" cy="40" r="10" />
+            <circle cx="190" cy="230" r="10" />
+            <circle cx="250" cy="150" r="10" />
 
-        <div id="mpu-description" class="absolute hidden">
-            <p>
-                Test mpu
-            </p>
+
+        </svg>
+        <p class="text-gray-500 font-normal text-md sm:text-lg text-center w-full mt-2  max-lg:hidden"
+            style="bottom: 0; left: 0; right: 0;" data-aos="fade-up" data-aos-delay="200">
+            Clicca sui punti per scoprire di più
+        </p>
+
+        <div id="mpu-callout" class="absolute callout" style="display: none;">
+            <!-- Callout -->
+            <div class="bg-white rounded-lg shadow-lg p-3">
+                <div class="flex flex-row items-center">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-gray-600 uppercase">MPU6050</h5>
+                        <p class="text-gray-500 text-sm">Giroscopio e accelerometro</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="arduino-description" class="absolute hidden">
-            <p>
-                Test arduino
-            </p>
+        <div id="arduino-callout" class="absolute callout" style="display: none;">
+            <!-- Callout -->
+            <div class="bg-white rounded-lg shadow-lg p-3">
+                <div class="flex flex-row items-center">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-gray-600 uppercase">Arduino</h5>
+                        <p class="text-gray-500 text-sm">Il nucleo centrale</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="bluetooth-description" class="absolute hidden">
-            <p>
-                Test bluetooth
-            </p>
+        <div id="bluetooth-callout" class="absolute callout" style="display: none;">
+            <div class="bg-white rounded-lg shadow-lg p-3">
+                <div class="flex flex-row items-center">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-gray-600 uppercase">Bluetooth</h5>
+                        <p class="text-gray-500 text-sm">Modulo bluetooth HC-05</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="battery-description" class="absolute hidden">
-            <p>
-                Test battery
-            </p>
+        <div id="battery-callout" class="absolute callout" style="display: none;">
+            <div class="bg-white rounded-lg shadow-lg p-3">
+                <div class="flex flex-row items-center">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-gray-600 uppercase">Batteria</h5>
+                        <p class="text-gray-500 text-sm">Batteria da 300mah</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -359,6 +402,9 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'
+        integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=='
+        crossorigin='anonymous'></script>
     <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
     <script src="./script.js"></script>
 </body>
