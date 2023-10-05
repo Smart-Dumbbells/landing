@@ -1,0 +1,11 @@
+{
+    "home": {
+        "title": "Una nuova strada per [allenarsi] ovunque tu voglia",
+        "description": "Grazie a (Smart Dumbbells) potrai far diventare lo sport divertente e coinvolgente",
+        "discoverBtn": "Scopri di più",
+        "shopBtn": "Acquista ora"
+    },
+    "about": {
+        "description": " L’attività fisica è spesso {noiosa} da praticare in solitudine e, per rimediare, abbiamo inventato {Smart Dumbbells}. Con esso potrai allenarti ovunque tu voglia, divertendoti, grazie ad un nuovo modo di fare fitness. <br><br> Smart Dumbbells è un attrezzo che ti permette di allenarti in modo {divertente e coinvolgente} grazie ad un avatar virtuale che cresce con te man mano che ti alleni, grazie ad un collegamento costante con il tuo smartphone 💪. <br><br>{Smart Dumbbells} è composto da un manubrio da palestra stampato in 3D, dotato di un sensore di movimento, un modulo bluetooth e una batteria ricaricabile. Il manubrio è collegato ad un gioco per smartphone e computer, che permette di allenarsi in modo divertente e coinvolgente."
+    }
+}
