@@ -203,16 +203,15 @@ function translateElement(element) {
     const key = element.getAttribute("data-i18n-key");
     const type = element.getAttribute("data-i18n-type");
     const words = translations[type][key].split(" ");
+    
+    let translation = "";
+    let match;
+    const boldMatches = /\{([^{}]+)\}/g;
+    const primaryColorMatches = /\[([^\[\]]+)\]/g;
+    const onlyBoldMatches = /\(([^\(\)]+)\)/g;
 
     let phrase = "";
     words.forEach((word) => {
-        let translation = "";
-
-        let match;
-        const boldMatches = /\{([^{}]+)\}/g;
-        const primaryColorMatches = /\[([^\[\]]+)\]/g;
-        const onlyBoldMatches = /\(([^\(\)]+)\)/g;
-
         while ((match = boldMatches.exec(word)) !== null) {
             const text = match[1];
             translation += word.substring(0, match.index);
