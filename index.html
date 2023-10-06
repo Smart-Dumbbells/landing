@@ -135,27 +135,20 @@
         <div class="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 sm:mb-10">
             <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10"
                 data-aos="zoom-in" data-aos-delay="100" data-i18n-type="home" data-i18n-key="title">
-                Una nuova strada per
-                allenarsi
-                ovunque tu voglia
             </h1>
 
             <p class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-md sm:text-lg"
                 data-aos="zoom-in" data-aos-delay="150"  data-i18n-type="home" data-i18n-key="description">
-                A professonal website drives sales. Create a beautiful website to
-                impress and engage new customers and establish your business online
             </p>
         </div>
         <div class="flex justify-center items-center">
             <button onclick="window.location.href='#smart-dumbbells'"
                 class="button-animation focus:outline-none transition duration-150 ease-in-out lg:text-xl font-bold rounded text-white px-4 sm:px-10 border primary-color-border py-2 sm:py-4 text-sm bg-primary-color"
                 data-aos="fade-right" data-aos-delay="200" data-i18n-type="home" data-i18n-key="discoverBtn">
-                Scopri di più
             </button>
             <button
                 class="ml-4 focus:outline-none bg-transparent transition duration-150 ease-in-out lg:text-xl font-bold rounded border primary-color-border primary-color px-4 sm:px-10 py-2 sm:py-4 text-sm"
                 data-aos="fade-left" data-aos-delay="250" data-i18n-type="home" data-i18n-key="shopBtn">
-                Acquista
                 <span
                     class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Soon</span>
             </button>
@@ -164,7 +157,6 @@
         <div class="image-hero w-4/5 lg:w-3/4 bg-gray-100" data-aos="fade-up" data-aos-delay="300">
             <img src="https://picsum.photos/1000/400" class="hidden" id="image-no3d" />
             <div id="model" style="width: 100%; height: 400px" class="bg-gray-100"> </div>
-
         </div>
 
     </div>
@@ -180,7 +172,7 @@
                         Smart Dumbbells
                     </h1>
                     <p class="mt-5 sm:mt-10 w-full text-gray-500 font-normal text-md sm:text-lg text-justify"
-                        data-aos="fade-right" data-i18n-type="about" data-i18n-key="description">
+                        data-aos="fade-right" data-i18n-type="info" data-i18n-key="description">
                         <!-- L’attività fisica è spesso <span class="font-bold text-gray-800 animate_underline">noiosa</span>
                         da
                         praticare in
@@ -216,8 +208,8 @@
                 <rect x="8" y="19" width="167" height="106" id="mpu"></rect>
                 <rect x="314" y="0" width="375" height="113" id="arduino"></rect>
                 <rect x="150" y="129" width="250" height="70" id="bluetooth"></rect>
-                <rect x="84" y="212" width="233" height="60" id="battery"></rect>
-                <rect x="91" y="142" width="55" height="80" id="battery"></rect>
+                <rect x="84" y="212" width="233" height="60" id="battery1"></rect>
+                <rect x="91" y="142" width="55" height="80" id="battery2"></rect>
                 <circle cx="100" cy="60" r="10" />
                 <circle cx="500" cy="40" r="10" />
                 <circle cx="190" cy="230" r="10" />
@@ -231,8 +223,8 @@
                 <div class="bg-white rounded-lg shadow-lg p-3">
                     <div class="flex flex-row items-center">
                         <div class="flex-1">
-                            <h5 class="font-bold text-gray-600 uppercase">MPU6050</h5>
-                            <p class="text-gray-500 text-sm">Giroscopio e accelerometro</p>
+                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info" data-i18n-key="gyroTitle">MPU6050</h5>
+                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="gyroDescription">Giroscopio e accelerometro</p>
                         </div>
                     </div>
                 </div>
@@ -242,8 +234,8 @@
                 <div class="bg-white rounded-lg shadow-lg p-3">
                     <div class="flex flex-row items-center">
                         <div class="flex-1">
-                            <h5 class="font-bold text-gray-600 uppercase">Arduino</h5>
-                            <p class="text-gray-500 text-sm">Il nucleo centrale</p>
+                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info" data-i18n-key="arduinoTitle">Arduino</h5>
+                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="arduinoDescription">Il nucleo centrale</p>
                         </div>
                     </div>
                 </div>
@@ -252,8 +244,8 @@
                 <div class="bg-white rounded-lg shadow-lg p-3">
                     <div class="flex flex-row items-center">
                         <div class="flex-1">
-                            <h5 class="font-bold text-gray-600 uppercase">Bluetooth</h5>
-                            <p class="text-gray-500 text-sm">Modulo bluetooth HC-05</p>
+                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info" data-i18n-key="bluetoothTitle">Bluetooth</h5>
+                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="bluetoothDescription">Modulo bluetooth HC-05</p>
                         </div>
                     </div>
                 </div>
@@ -262,8 +254,8 @@
                 <div class="bg-white rounded-lg shadow-lg p-3">
                     <div class="flex flex-row items-center">
                         <div class="flex-1">
-                            <h5 class="font-bold text-gray-600 uppercase">Batteria</h5>
-                            <p class="text-gray-500 text-sm">Batteria da 300mah</p>
+                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info" data-i18n-key="batteryTitle">Batteria</h5>
+                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="batteryDescription">Batteria da 300mah</p>
                         </div>
                     </div>
                 </div>
@@ -272,17 +264,17 @@
     </section>
 
     <section id="about" class="bg-gray-100">
-        <div class="flex flex-row items-center py-12 sm:py-10 mt-24">
+        <div class="flex flex-row items-center py-10 sm:py-8 mt-8">
             <div
                 class="mx-auto flex flex-col lg:flex-row-reverse items-center gap-x-20 align-middle justify-center mx-10 max-sm:mx-5">
                 <div class="flex flex-col flex mb-5 sm:mb-10 lg:w-1/2">
                     <h1 class="text-2xl max-sm:text-center text-left w-full sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-800 font-black leading-7 md:leading-10"
-                        data-aos="fade-right">
-                        Chi siamo?
+                        data-aos="fade-right" data-i18n-type="about" data-i18n-key="title">
+                        <!-- Chi siamo? -->
                     </h1>
                     <p class="mt-5 sm:mt-10 w-full text-gray-500 font-normal text-md sm:text-lg text-justify"
-                        data-aos="fade-right">
-                        Siamo degli studenti di quinto anno <span
+                        data-aos="fade-right" data-i18n-type="about" data-i18n-key="description">
+                        <!-- Siamo degli studenti di quinto anno <span
                             class="font-bold text-gray-800 animate_underline">dell’”I.T.E.T. Rapisardi Da Vinci” di
                             Caltanissetta</span>,
                         dove frequentiamo due classi diverse dell’indirizzo informatica e telecomunicazioni,
@@ -295,13 +287,84 @@
                         <span
                             class="font-bold text-gray-800 animate_underline">Email:</span> <a href="mailto:smart.dumbbells@rapisardidavinci.it" class="text-blue-500 font-semibold">smart.dumbbells@rapisardidavinci.it</a><br>
                         <span
-                            class="font-bold text-gray-800 animate_underline">Instagram:</span> <a href="https://instagram.com/smartdumbbellsit" class="text-blue-500 font-semibold">@smartdumbbellsit</a>
+                            class="font-bold text-gray-800 animate_underline">Instagram:</span> <a href="https://instagram.com/smartdumbbellsit" class="text-blue-500 font-semibold">@smartdumbbellsit</a> -->
                             
                     </p>
                     
                 </div>
-                <img class="max-lg:hidden rounded-xl" src="https://picsum.photos/300/400" data-aos="fade-left" />
-                <img class="hidden max-lg:block rounded-xl" src="https://picsum.photos/600/300" data-aos="fade-left" />
+                <img class="max-lg:hidden rounded-xl" src="https://picsum.photos/300/400" data-aos="fade-right" />
+                <img class="hidden max-lg:block rounded-xl" src="https://picsum.photos/600/300" data-aos="fade-bottom" />
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="game" class="bg-gray-300">
+        <div class="flex flex-row-reverse items-center py-10 sm:py-8 mt-8">
+            <div
+                class="mx-auto flex flex-col lg:flex-row-reverse items-center gap-x-20 align-middle justify-center mx-10 max-sm:mx-5">
+                <div class="flex flex-col flex mb-5 sm:mb-10 lg:w-1/2">
+                    <h1 class="text-2xl max-sm:text-center text-left w-full sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-800 font-black leading-7 md:leading-10"
+                        data-aos="fade-right" data-i18n-type="game" data-i18n-key="title">
+                        <!-- Chi siamo? -->
+                    </h1>
+                    <p class="mt-5 sm:mt-10 w-full text-gray-500 font-normal text-md sm:text-lg text-justify"
+                        data-aos="fade-right" data-i18n-type="game" data-i18n-key="description">
+                        <!-- Siamo degli studenti di quinto anno <span
+                            class="font-bold text-gray-800 animate_underline">dell’”I.T.E.T. Rapisardi Da Vinci” di
+                            Caltanissetta</span>,
+                        dove frequentiamo due classi diverse dell’indirizzo informatica e telecomunicazioni,
+                        specializzazione
+                        informatica. Ci siamo conosciuti in occasione di un evento organizzato dalla scuola che trattava
+                        del mondo dell’intelligenza artificiale applicata ai microcontrollori, dove abbiamo scoperto di
+                        avere diverse passioni in comune; in quello stesso giorno, abbiamo avuto l’idea di sviluppare
+                        "Smart Dumbbells".<br><br>
+                        Puoi contattarci tramite:<br>
+                        <span
+                            class="font-bold text-gray-800 animate_underline">Email:</span> <a href="mailto:smart.dumbbells@rapisardidavinci.it" class="text-blue-500 font-semibold">smart.dumbbells@rapisardidavinci.it</a><br>
+                        <span
+                            class="font-bold text-gray-800 animate_underline">Instagram:</span> <a href="https://instagram.com/smartdumbbellsit" class="text-blue-500 font-semibold">@smartdumbbellsit</a> -->
+                            
+                    </p>
+                    
+                </div>
+                <img class="max-lg:hidden rounded-xl" src="https://picsum.photos/300/400" data-aos="fade-right" />
+                <img class="hidden max-lg:block rounded-xl" src="https://picsum.photos/600/300" data-aos="fade-bottom" />
+            </div>
+        </div>
+    </section>
+
+    <section id="chargingStation" class="bg-gray-100">
+        <div class="flex flex-row items-center py-10 sm:py-8 mt-8">
+            <div
+                class="mx-auto flex flex-col lg:flex-row-reverse items-center gap-x-20 align-middle justify-center mx-10 max-sm:mx-5">
+                <div class="flex flex-col flex mb-5 sm:mb-10 lg:w-1/2">
+                    <h1 class="text-2xl max-sm:text-center text-left w-full sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-800 font-black leading-7 md:leading-10"
+                        data-aos="fade-right" data-i18n-type="chargingStation" data-i18n-key="title">
+                        <!-- Chi siamo? -->
+                    </h1>
+                    <p class="mt-5 sm:mt-10 w-full text-gray-500 font-normal text-md sm:text-lg text-justify"
+                        data-aos="fade-right" data-i18n-type="chargingStation" data-i18n-key="description">
+                        <!-- Siamo degli studenti di quinto anno <span
+                            class="font-bold text-gray-800 animate_underline">dell’”I.T.E.T. Rapisardi Da Vinci” di
+                            Caltanissetta</span>,
+                        dove frequentiamo due classi diverse dell’indirizzo informatica e telecomunicazioni,
+                        specializzazione
+                        informatica. Ci siamo conosciuti in occasione di un evento organizzato dalla scuola che trattava
+                        del mondo dell’intelligenza artificiale applicata ai microcontrollori, dove abbiamo scoperto di
+                        avere diverse passioni in comune; in quello stesso giorno, abbiamo avuto l’idea di sviluppare
+                        "Smart Dumbbells".<br><br>
+                        Puoi contattarci tramite:<br>
+                        <span
+                            class="font-bold text-gray-800 animate_underline">Email:</span> <a href="mailto:smart.dumbbells@rapisardidavinci.it" class="text-blue-500 font-semibold">smart.dumbbells@rapisardidavinci.it</a><br>
+                        <span
+                            class="font-bold text-gray-800 animate_underline">Instagram:</span> <a href="https://instagram.com/smartdumbbellsit" class="text-blue-500 font-semibold">@smartdumbbellsit</a> -->
+                            
+                    </p>
+                    
+                </div>
+                <img class="max-lg:hidden rounded-xl" src="https://picsum.photos/300/400" data-aos="fade-right" />
+                <img class="hidden max-lg:block rounded-xl" src="https://picsum.photos/600/300" data-aos="fade-bottom" />
             </div>
         </div>
     </section>

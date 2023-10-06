@@ -1,9 +1,23 @@
 {
     "home": {
-        "title": "Una nuova strada per [allenarsi] ovunque tu voglia",
-        "description": "Grazie a (Smart Dumbbells) potrai far diventare lo sport divertente e coinvolgente",
-        "discoverBtn": "Scopri di più",
-        "shopBtn": "Acquista ora"
-    
+        "title": "A new way to [work out] wherever you want",
+        "description": "Thanks to (Smart Dumbbells) we make sport much more fun and engaging",
+        "discoverBtn": "Learn more",
+        "shopBtn": "Buy Now"
+    },
+    "info": {
+        "description": " L’attività fisica è spesso {noiosa} da praticare in solitudine e, per rimediare, abbiamo inventato {Smart Dumbbells}. Con esso potrai allenarti ovunque tu voglia, divertendoti, grazie ad un nuovo modo di fare fitness. <br><br> Smart Dumbbells è un attrezzo che ti permette di allenarti in modo {divertente e coinvolgente} grazie ad un avatar virtuale che cresce con te man mano che ti alleni, grazie ad un collegamento costante con il tuo smartphone 💪. <br><br>{Smart Dumbbells} è composto da un manubrio da palestra stampato in 3D, dotato di un sensore di movimento, un modulo bluetooth e una batteria ricaricabile. Il manubrio è collegato ad un gioco per smartphone e computer, che permette di allenarsi in modo divertente e coinvolgente.",
+        "gyroTitle": "MPU6050",
+        "gyroDescription": "",
+        "arduinoTitle": "",
+        "arduinoDescription": "",
+        "bluetoothTitle": "",
+        "bluetoothDescription": "",
+        "batteryTitle": "",
+        "batteryDescription": ""
+    },
+    "about": {
+        "title": "Chi siamo",
+        "description": "Siamo degli studenti di quinto anno {dell’”I.T.E.T. Rapisardi Da Vinci” di Caltanissetta}, dove frequentiamo due classi diverse dell’indirizzo informatica e telecomunicazioni, specializzazione informatica. Ci siamo conosciuti in occasione di un evento organizzato dalla scuola che trattava del mondo dell’intelligenza artificiale applicata ai microcontrollori, dove abbiamo scoperto di avere (diverse passioni in comune); in quello stesso giorno, abbiamo avuto l’idea di sviluppare 'Smart Dumbbells'.<br><br>Puoi contattarci tramite:<br> {Email:} <a href='mailto:smart.dumbbells@rapisardidavinci.it' class='text-blue-500 font-semibold'>smart.dumbbells@rapisardidavinci.it</a><br>{Instagram:} <a href='https://instagram.com/smartdumbbellsit' class='text-blue-500 font-semibold'>@smartdumbbellsit</a>"
     }
 }

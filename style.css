@@ -152,7 +152,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
 }
 
-.callout-rect rect:hover {
+.callout-rect rect:not(#battery1, #battery2):hover {
     fill: #febf00;
     opacity: 0.2;
 }

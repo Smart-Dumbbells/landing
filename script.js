@@ -101,8 +101,8 @@ function STLViewer(model, elementID) {
     }, false);
 
     controls.enableDamping = true;
-    controls.rotateSpeed = 0.05;
-    controls.dampingFactor = 0.1;
+    controls.rotateSpeed = 0.2;
+    controls.dampingFactor = 0.2;
     controls.enableZoom = false;
     controls.autoRotate = true;
     controls.autoRotateSpeed = .75;
@@ -191,10 +191,14 @@ async function changeLanguage(lang) {
 $("#changeLanguageBtn").click(function () {
     if ($("#changeLanguageBtn").text() === "EN") {
         $("#changeLanguageBtn").text("IT");
-        changeLanguage("en");
+        changeLanguage("en").then((responseJson) => {
+            reloadAnnotations();
+        });
     } else {
         $("#changeLanguageBtn").text("EN");
-        changeLanguage("it");
+        changeLanguage("it").then((responseJson) => {
+            reloadAnnotations();
+        });
     }
 });
 
@@ -202,50 +206,20 @@ $("#changeLanguageBtn").click(function () {
 function translateElement(element) {
     const key = element.getAttribute("data-i18n-key");
     const type = element.getAttribute("data-i18n-type");
-    const words = translations[type][key].split(" ");
+    const translation = translations[type][key];
     
-    let translation = "";
-    let match;
+    // Replace with <span class="font-bold text-gray-800 animate_underline">${text}</span>
     const boldMatches = /\{([^{}]+)\}/g;
+    // Replace with <span class="primary-color">${text}</span>
     const primaryColorMatches = /\[([^\[\]]+)\]/g;
+    // replace with <span class="font-bold text-gray-800">${text}</span>
     const onlyBoldMatches = /\(([^\(\)]+)\)/g;
 
-    let phrase = "";
-    words.forEach((word) => {
-        while ((match = boldMatches.exec(word)) !== null) {
-            const text = match[1];
-            translation += word.substring(0, match.index);
-            translation += `<span class="font-bold text-gray-800 animate_underline">${text}</span>`;
-            word = word.substring(match.index + match[0].length);
-        }
-        translation += word;
+    const text = translation.replace(boldMatches, '<span class="font-bold text-gray-800 animate_underline">$1</span>')
+        .replace(primaryColorMatches, '<span class="primary-color">$1</span>')
+        .replace(onlyBoldMatches, '<span class="font-bold text-gray-800">$1</span>');
 
-        word = translation;
-        translation = "";
-
-        while ((match = primaryColorMatches.exec(word)) !== null) {
-            const text = match[1];
-            translation += word.substring(0, match.index);
-            translation += `<span class="primary-color">${text}</span>`;
-            word = word.substring(match.index + match[0].length);
-        }
-        translation += word;
-
-        word = translation;
-        translation = "";
-
-        while ((match = onlyBoldMatches.exec(word)) !== null) {
-            const text = match[1];
-            translation += word.substring(0, match.index);
-            translation += `<span class="font-bold text-gray-800">${text}</span>`;
-            word = word.substring(match.index + match[0].length);
-        }
-        translation += word;
-
-        phrase += translation + " ";
-    });
-
-    element.innerHTML = phrase.trim();
+    element.innerHTML = text;
 }
 
 function reloadAnnotations() {
@@ -267,7 +241,6 @@ function reloadAnnotations() {
 // On document ready
 document.addEventListener('DOMContentLoaded', function () {
     changeLanguage(locale).then((responseJson) => {
-        console.log(responseJson);
         reloadAnnotations();
     });
 
@@ -298,7 +271,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const mpu = document.querySelector('#mpu');
     const arduino = document.querySelector('#arduino');
     const bluetooth = document.querySelector('#bluetooth');
-    const batteries = document.querySelectorAll('#battery');
+    const battery1 = document.querySelector('#battery1');
+    const battery2 = document.querySelector('#battery2');
 
     const mpuCallout = document.querySelector('#mpu-callout');
     const arduinoCallout = document.querySelector('#arduino-callout');
@@ -309,37 +283,58 @@ document.addEventListener('DOMContentLoaded', function () {
         $(mpuCallout).fadeIn("fast");
     });
 
-    $(mpu).on('mouseout touchend', function () {
+    $(mpu).on('mouseout', function () {
         $(mpuCallout).fadeOut("fast");
     });
 
-    $(arduino).on('touchstart mouseover', function () {
+    $(arduino).on('mouseover', function () {
         $(arduinoCallout).fadeIn("fast");
     });
 
-    $(arduino).on('mouseout touchend', function () {
+    $(arduino).on('mouseout', function () {
         $(arduinoCallout).fadeOut("fast");
     });
 
-    $(bluetooth).on('touchstart mouseover', function () {
+    $(bluetooth).on('mouseover', function () {
         $(bluetoothCallout).fadeIn("fast");
     });
 
-    $(bluetooth).on('mouseout touchend', function () {
+    $(bluetooth).on('mouseout', function () {
         $(bluetoothCallout).fadeOut("fast");
     });
 
-    batteries.forEach(battery => {
-        $(battery).on('touchstart mouseover', function () {
-            $(batteryCallout).fadeIn("fast");
-        });
+    $(battery1).on('mouseover', function () {
+        $(battery1).css("fill", "#febf00");
+        $(battery1).css("opacity", "0.2");
+        $(battery2).css("fill", "#febf00");
+        $(battery2).css("opacity", "0.2");
+        $(batteryCallout).fadeIn("fast");
+    });
 
-        $(battery).on('mouseout touchend', function () {
-            $(batteryCallout).fadeOut("fast");
-        });
+    $(battery1).on('mouseout', function () {
+        $(battery1).css("fill", "transparent");
+        $(battery1).css("opacity", "1");
+        $(battery2).css("fill", "transparent");
+        $(battery2).css("opacity", "1");
+        $(batteryCallout).fadeOut("fast");
+    });
+
+    $(battery2).on('mouseover', function () {
+        $(battery1).css("fill", "#febf00");
+        $(battery1).css("opacity", "0.2");
+        $(battery2).css("fill", "#febf00");
+        $(battery2).css("opacity", "0.2");
+        $(batteryCallout).fadeIn("fast");
+    });
+
+    $(battery2).on('mouseout', function () {
+        $(battery1).css("fill", "transparent");
+        $(battery1).css("opacity", "1");
+        $(battery2).css("fill", "transparent");
+        $(battery2).css("opacity", "1");
+        $(batteryCallout).fadeOut("fast");
     });
 
     AOS.init();
-    reloadAnnotations();
     $("#loader").fadeOut("slow");
 });
