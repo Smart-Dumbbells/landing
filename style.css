@@ -69,9 +69,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .image-hero {
-    height: 350px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 60px;
     animation: fadeInUpBig;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s;
@@ -79,11 +78,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .image-hero img {
-    height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 0 0 3px var(--primary-color);
 }
 
 @keyframes scroll {
@@ -146,6 +142,27 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     top: 55%;
 }
+
+#gabriele-callout {
+    left: 1%;
+    margin-bottom: 8%;
+}
+
+#lorenzo-callout {
+    left: 6%;
+    margin-bottom: 8%;
+}
+
+#matteo-callout {
+    left: 8%;
+    margin-bottom: 8%;
+}
+
+#paolo-callout {
+    left: 32%;
+    margin-bottom: 10%;
+}
+
 
 .callout-rect rect {
     fill: transparent;

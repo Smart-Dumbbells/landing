@@ -1,23 +1,33 @@
 {
     "home": {
-        "title": "A new way to [work out] wherever you want",
-        "description": "Thanks to (Smart Dumbbells) we make sport much more fun and engaging",
-        "discoverBtn": "Learn more",
-        "shopBtn": "Buy Now"
+        "title": "A new way of [working out] anywhere you want",
+        "description": "Thanks to (Smart Dumbbells) we can make physical activity much more engaging and fun",
+        "discoverBtn": "Find out more",
+        "shopBtn": "Buy now <span class='inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20'>Soon</span>"
     },
     "info": {
-        "description": " L’attività fisica è spesso {noiosa} da praticare in solitudine e, per rimediare, abbiamo inventato {Smart Dumbbells}. Con esso potrai allenarti ovunque tu voglia, divertendoti, grazie ad un nuovo modo di fare fitness. <br><br> Smart Dumbbells è un attrezzo che ti permette di allenarti in modo {divertente e coinvolgente} grazie ad un avatar virtuale che cresce con te man mano che ti alleni, grazie ad un collegamento costante con il tuo smartphone 💪. <br><br>{Smart Dumbbells} è composto da un manubrio da palestra stampato in 3D, dotato di un sensore di movimento, un modulo bluetooth e una batteria ricaricabile. Il manubrio è collegato ad un gioco per smartphone e computer, che permette di allenarsi in modo divertente e coinvolgente.",
-        "gyroTitle": "MPU6050",
-        "gyroDescription": "",
-        "arduinoTitle": "",
-        "arduinoDescription": "",
-        "bluetoothTitle": "",
-        "bluetoothDescription": "",
-        "batteryTitle": "",
-        "batteryDescription": ""
+        "description": " Physical activity is often {boring} when done alone, as a remedy we created {Smart Dumbbells}. <br><br> Smart Dumbbells is a system that allows you to work out wherever you want in a {fun and engaging} way thanks to a personal virtual avatar that grows with you after every session, due to a continuous link with your smartphone 💪. <br><br>{Smart Dumbbells} is made of a 3D printed dumbbell equipped with a movement sensor, a Bluetooth transceiver and a rechargeable battery. The dumbbell is connected to a videogame for smartphone and PC, that allows you to have a visual feedback of your workout.",
+        "gyroTitle": "Gyroscope-accelerometer",
+        "gyroDescription": "A movement detecting sensor",
+        "arduinoTitle": "Arduino Nano",
+        "arduinoDescription": "The central nucleus that controls the whole system",
+        "bluetoothTitle": "Bluetooth module",
+        "bluetoothDescription": "Un modulo che permette di collegare il manubrio al gioco",
+        "batteryTitle": "700mAh battery",
+        "batteryDescription": "A battery that will never let you down"
     },
     "about": {
-        "title": "Chi siamo",
-        "description": "Siamo degli studenti di quinto anno {dell’”I.T.E.T. Rapisardi Da Vinci” di Caltanissetta}, dove frequentiamo due classi diverse dell’indirizzo informatica e telecomunicazioni, specializzazione informatica. Ci siamo conosciuti in occasione di un evento organizzato dalla scuola che trattava del mondo dell’intelligenza artificiale applicata ai microcontrollori, dove abbiamo scoperto di avere (diverse passioni in comune); in quello stesso giorno, abbiamo avuto l’idea di sviluppare 'Smart Dumbbells'.<br><br>Puoi contattarci tramite:<br> {Email:} <a href='mailto:smart.dumbbells@rapisardidavinci.it' class='text-blue-500 font-semibold'>smart.dumbbells@rapisardidavinci.it</a><br>{Instagram:} <a href='https://instagram.com/smartdumbbellsit' class='text-blue-500 font-semibold'>@smartdumbbellsit</a>"
+        "title": "Who are we",
+        "description": "We are fifth year students {of ”I.T.E.T. Rapisardi Da Vinci” school in Caltanissetta}, we are 2 pair of two different classes, where we study IT and telecommunications. We met because of a school related event about AI embedded into microcontrollers, where we discovered that we had (a lot of interests in common); on that same day the idea of developing 'Smart Dumbbells'.<br><br>Contact us by:<br> {Email:} <a href='mailto:smart.dumbbells@rapisardidavinci.it' class='text-blue-500 font-semibold'>smart.dumbbells@rapisardidavinci.it</a><br>{Instagram:} <a href='https://instagram.com/smartdumbbellsit' class='text-blue-500 font-semibold'>@smartdumbbellsit</a>"
+    },
+    "game": {
+        "title": "The game",
+        "description": "Graie"
+
+
+    },
+    "chargingStation": {
+        "title": "Non restare mai senza batteria",
+        "description": "Grazie alla potentissima "
     }
 }

@@ -79,6 +79,9 @@ function STLViewer(model, elementID) {
         document.querySelector('#model').classList.add('hidden');
         document.querySelector('#image-no3d').classList.remove('hidden');
         return;
+    } else {
+        document.querySelector('#model').classList.remove('hidden');
+        document.querySelector('#image-no3d').classList.add('hidden');
     }
     const elem = document.getElementById(elementID);
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -94,6 +97,9 @@ function STLViewer(model, elementID) {
             document.querySelector('#model').classList.add('hidden');
             document.querySelector('#image-no3d').classList.remove('hidden');
             return;
+        } else {
+            document.querySelector('#model').classList.remove('hidden');
+            document.querySelector('#image-no3d').classList.add('hidden');
         }
         renderer.setSize(elem.clientWidth, elem.clientHeight);
         camera.aspect = elem.clientWidth / elem.clientHeight;
@@ -268,11 +274,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    const mpu = document.querySelector('#mpu');
-    const arduino = document.querySelector('#arduino');
-    const bluetooth = document.querySelector('#bluetooth');
-    const battery1 = document.querySelector('#battery1');
-    const battery2 = document.querySelector('#battery2');
+    const mpu = document.querySelectorAll('#mpu');
+    const arduino = document.querySelectorAll('#arduino');
+    const bluetooth = document.querySelectorAll('#bluetooth');
+    const battery1 = document.querySelectorAll('#battery1');
+    const battery2 = document.querySelectorAll('#battery2');
 
     const mpuCallout = document.querySelector('#mpu-callout');
     const arduinoCallout = document.querySelector('#arduino-callout');
@@ -333,6 +339,49 @@ document.addEventListener('DOMContentLoaded', function () {
         $(battery2).css("fill", "transparent");
         $(battery2).css("opacity", "1");
         $(batteryCallout).fadeOut("fast");
+    });
+
+    
+    const gabriele = document.querySelectorAll('#gabriele');
+    const lorenzo = document.querySelectorAll('#lorenzo');
+    const matteo = document.querySelectorAll('#matteo');
+    const paolo = document.querySelectorAll('#paolo');
+
+    const gabrieleCallout = document.querySelector('#gabriele-callout');
+    const lorenzoCallout = document.querySelector('#lorenzo-callout');
+    const matteoCallout = document.querySelector('#matteo-callout');
+    const paoloCallout = document.querySelector('#paolo-callout');
+
+    $(gabriele).on('mouseover', function () {
+        $(gabrieleCallout).fadeIn("fast");
+    });
+
+    $(gabriele).on('mouseout', function () {
+        $(gabrieleCallout).fadeOut("fast");
+    });
+
+    $(lorenzo).on('mouseover', function () {
+        $(lorenzoCallout).fadeIn("fast");
+    });
+
+    $(lorenzo).on('mouseout', function () {
+        $(lorenzoCallout).fadeOut("fast");
+    });
+
+    $(matteo).on('mouseover', function () {
+        $(matteoCallout).fadeIn("fast");
+    });
+
+    $(matteo).on('mouseout', function () {
+        $(matteoCallout).fadeOut("fast");
+    });
+
+    $(paolo).on('mouseover', function () {
+        $(paoloCallout).fadeIn("fast");
+    });
+
+    $(paolo).on('mouseout', function () {
+        $(paoloCallout).fadeOut("fast");
     });
 
     AOS.init();

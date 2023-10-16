@@ -138,7 +138,7 @@
             </h1>
 
             <p class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-md sm:text-lg"
-                data-aos="zoom-in" data-aos-delay="150"  data-i18n-type="home" data-i18n-key="description">
+                data-aos="zoom-in" data-aos-delay="150" data-i18n-type="home" data-i18n-key="description">
             </p>
         </div>
         <div class="flex justify-center items-center">
@@ -155,7 +155,7 @@
         </div>
 
         <div class="image-hero w-4/5 lg:w-3/4 bg-gray-100" data-aos="fade-up" data-aos-delay="300">
-            <img src="https://picsum.photos/1000/400" class="hidden" id="image-no3d" />
+            <img src="https://ucarecdn.com/13d2d4d0-cd4e-4301-ac53-92d8959667ed/-/preview/600x600/-/quality/smart/-/format/auto/" class="hidden" id="image-no3d" />
             <div id="model" style="width: 100%; height: 400px" class="bg-gray-100"> </div>
         </div>
 
@@ -196,7 +196,7 @@
                     </p>
                 </div>
                 <img class="max-lg:hidden rounded-xl" src="https://picsum.photos/300/400" data-aos="fade-left" />
-                <img class="hidden max-lg:block rounded-xl" src="https://picsum.photos/600/300" data-aos="fade-left" />
+                <img class="hidden max-lg:block rounded-xl" src="https://ucarecdn.com/fa784218-00f1-4524-987b-cb7582e231a9/-/preview/600x600/-/quality/smart/-/format/auto/0" data-aos="fade-left" />
             </div>
         </div>
 
@@ -210,10 +210,10 @@
                 <rect x="150" y="129" width="250" height="70" id="bluetooth"></rect>
                 <rect x="84" y="212" width="233" height="60" id="battery1"></rect>
                 <rect x="91" y="142" width="55" height="80" id="battery2"></rect>
-                <circle cx="100" cy="60" r="10" />
-                <circle cx="500" cy="40" r="10" />
+                <circle cx="100" cy="60" r="10" id="mpu" />
+                <circle cx="500" cy="40" r="10" id="arduino" />
+                <circle cx="250" cy="150" r="10" id="bluetooth"/>
                 <circle cx="190" cy="230" r="10" />
-                <circle cx="250" cy="150" r="10" />
 
 
             </svg>
@@ -223,8 +223,10 @@
                 <div class="bg-white rounded-lg shadow-lg p-3">
                     <div class="flex flex-row items-center">
                         <div class="flex-1">
-                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info" data-i18n-key="gyroTitle">MPU6050</h5>
-                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="gyroDescription">Giroscopio e accelerometro</p>
+                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info"
+                                data-i18n-key="gyroTitle">MPU6050</h5>
+                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="gyroDescription">
+                                Giroscopio e accelerometro</p>
                         </div>
                     </div>
                 </div>
@@ -234,8 +236,10 @@
                 <div class="bg-white rounded-lg shadow-lg p-3">
                     <div class="flex flex-row items-center">
                         <div class="flex-1">
-                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info" data-i18n-key="arduinoTitle">Arduino</h5>
-                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="arduinoDescription">Il nucleo centrale</p>
+                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info"
+                                data-i18n-key="arduinoTitle">Arduino</h5>
+                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="arduinoDescription">Il
+                                nucleo centrale</p>
                         </div>
                     </div>
                 </div>
@@ -244,8 +248,10 @@
                 <div class="bg-white rounded-lg shadow-lg p-3">
                     <div class="flex flex-row items-center">
                         <div class="flex-1">
-                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info" data-i18n-key="bluetoothTitle">Bluetooth</h5>
-                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="bluetoothDescription">Modulo bluetooth HC-05</p>
+                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info"
+                                data-i18n-key="bluetoothTitle">Bluetooth</h5>
+                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="bluetoothDescription">
+                                Modulo bluetooth HC-05</p>
                         </div>
                     </div>
                 </div>
@@ -254,8 +260,10 @@
                 <div class="bg-white rounded-lg shadow-lg p-3">
                     <div class="flex flex-row items-center">
                         <div class="flex-1">
-                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info" data-i18n-key="batteryTitle">Batteria</h5>
-                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="batteryDescription">Batteria da 300mah</p>
+                            <h5 class="font-bold text-gray-600 uppercase" data-i18n-type="info"
+                                data-i18n-key="batteryTitle">Batteria</h5>
+                            <p class="text-gray-500 text-sm" data-i18n-type="info" data-i18n-key="batteryDescription">
+                                Batteria da 300mah</p>
                         </div>
                     </div>
                 </div>
@@ -288,21 +296,87 @@
                             class="font-bold text-gray-800 animate_underline">Email:</span> <a href="mailto:smart.dumbbells@rapisardidavinci.it" class="text-blue-500 font-semibold">smart.dumbbells@rapisardidavinci.it</a><br>
                         <span
                             class="font-bold text-gray-800 animate_underline">Instagram:</span> <a href="https://instagram.com/smartdumbbellsit" class="text-blue-500 font-semibold">@smartdumbbellsit</a> -->
-                            
+
                     </p>
-                    
+
                 </div>
-                <img class="max-lg:hidden rounded-xl" src="https://picsum.photos/300/400" data-aos="fade-right" />
-                <img class="hidden max-lg:block rounded-xl" src="https://picsum.photos/600/300" data-aos="fade-bottom" />
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 500 375" class="max-lg:hidden rounded-xl w-2/3 sm:w-1/2 lg:w-1/3 mx-auto callout-rect" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <image width="500" height="375"
+                        xlink:href="https://ucarecdn.com/865e2db6-551f-4962-934e-a75660f4b67e/-/preview/500x500/-/quality/smart/-/format/auto/">
+                    </image>
+                    <rect x="30" y="110" width="140" height="265" id="gabriele"></rect>
+                    <rect x="150" y="100" width="90" height="280" id="lorenzo"></rect>
+                    <rect x="210" y="80" width="100" height="300" id="matteo"></rect>
+                    <rect x="290" y="50" width="160" height="330" id="paolo"></rect>
+
+                    <circle cx="100" cy="200" r="10" id="gabriele" />
+                    <circle cx="200" cy="200" r="10" id="lorenzo" />
+                    <circle cx="270" cy="180" r="10" id="matteo" />
+                    <circle cx="350" cy="200" r="10" id="paolo" />
+                </svg>
+                <div id="gabriele-callout" class="absolute callout" style="display: none;">
+                    <!-- Callout -->
+                    <div class="bg-white rounded-lg shadow-lg p-3">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-1">
+                                <h5 class="font-bold text-gray-600 uppercase">Gabriele Difrancesco</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="lorenzo-callout" class="absolute callout" style="display: none;">
+                    <!-- Callout -->
+                    <div class="bg-white rounded-lg shadow-lg p-3">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-1">
+                                <h5 class="font-bold text-gray-600 uppercase">lorenzo Carli</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="matteo-callout" class="absolute callout" style="display: none;">
+                    <!-- Callout -->
+                    <div class="bg-white rounded-lg shadow-lg p-3">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-1">
+                                <h5 class="font-bold text-gray-600 uppercase">Matteo Sillitti</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="paolo-callout" class="absolute callout" style="display: none;">
+                    <!-- Callout -->
+                    <div class="bg-white rounded-lg shadow-lg p-3">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-1">
+                                <h5 class="font-bold text-gray-600 uppercase">Paolo Larosa</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <img class="max-lg:hidden rounded-xl"
+                    src="https://ucarecdn.com/865e2db6-551f-4962-934e-a75660f4b67e/-/preview/500x500/-/quality/smart/-/format/auto/"
+                    data-aos="fade-right" /> -->
+                <figure>
+                <img class="hidden max-lg:block rounded-xl"
+                    src="https://ucarecdn.com/865e2db6-551f-4962-934e-a75660f4b67e/-/preview/500x500/-/quality/smart/-/format/auto/"
+                    data-aos="fade-bottom" />
+                    <figcaption class="hidden max-lg:block text-center mt-2 text-gray-800">Gabriele Difrancesco, Lorenzo Carli, Matteo Sillitti, Paolo Larosa</figcaption>
+                </figure>
+
+
             </div>
         </div>
     </section>
 
-    
+
     <section id="game" class="bg-gray-300">
-        <div class="flex flex-row-reverse items-center py-10 sm:py-8 mt-8">
+        <div class="flex flex-row items-center py-10 sm:py-8 mt-8">
             <div
-                class="mx-auto flex flex-col lg:flex-row-reverse items-center gap-x-20 align-middle justify-center mx-10 max-sm:mx-5">
+                class="mx-auto flex flex-col lg:flex-row items-center gap-x-20 align-middle justify-center mx-10 max-sm:mx-5">
                 <div class="flex flex-col flex mb-5 sm:mb-10 lg:w-1/2">
                     <h1 class="text-2xl max-sm:text-center text-left w-full sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-800 font-black leading-7 md:leading-10"
                         data-aos="fade-right" data-i18n-type="game" data-i18n-key="title">
@@ -324,12 +398,16 @@
                             class="font-bold text-gray-800 animate_underline">Email:</span> <a href="mailto:smart.dumbbells@rapisardidavinci.it" class="text-blue-500 font-semibold">smart.dumbbells@rapisardidavinci.it</a><br>
                         <span
                             class="font-bold text-gray-800 animate_underline">Instagram:</span> <a href="https://instagram.com/smartdumbbellsit" class="text-blue-500 font-semibold">@smartdumbbellsit</a> -->
-                            
+
                     </p>
-                    
+
                 </div>
-                <img class="max-lg:hidden rounded-xl" src="https://picsum.photos/300/400" data-aos="fade-right" />
-                <img class="hidden max-lg:block rounded-xl" src="https://picsum.photos/600/300" data-aos="fade-bottom" />
+                <img class="max-lg:hidden rounded-xl"
+                    src="https://ucarecdn.com/21101ab7-90b3-433a-902c-8d9ca47cf00d/-/preview/400x400/-/quality/smart/-/format/auto/"
+                    data-aos="fade-right" />
+                <img class="hidden max-lg:block rounded-xl"
+                    src="https://ucarecdn.com/5ce9ae4f-4e95-4154-afa5-a85efae502a8/-/preview/600x600/-/quality/smart/-/format/auto/"
+                    data-aos="fade-bottom" />
             </div>
         </div>
     </section>
@@ -359,16 +437,17 @@
                             class="font-bold text-gray-800 animate_underline">Email:</span> <a href="mailto:smart.dumbbells@rapisardidavinci.it" class="text-blue-500 font-semibold">smart.dumbbells@rapisardidavinci.it</a><br>
                         <span
                             class="font-bold text-gray-800 animate_underline">Instagram:</span> <a href="https://instagram.com/smartdumbbellsit" class="text-blue-500 font-semibold">@smartdumbbellsit</a> -->
-                            
+
                     </p>
-                    
+
                 </div>
                 <img class="max-lg:hidden rounded-xl" src="https://picsum.photos/300/400" data-aos="fade-right" />
-                <img class="hidden max-lg:block rounded-xl" src="https://picsum.photos/600/300" data-aos="fade-bottom" />
+                <img class="hidden max-lg:block rounded-xl" src="https://picsum.photos/600/300"
+                    data-aos="fade-bottom" />
             </div>
         </div>
     </section>
-    
+
     <!-- Bottom arrow at bottom of screen -->
     <div class="fixed bottom-0 left-0 right-0 mb-8 z-10" id="scrollPage">
         <div class="flex justify-center custom-bounce">
@@ -406,7 +485,8 @@
     <!-- Floating button to change language -->
     <div class="fixed bottom-0 right-0 mb-8 mr-8 z-10">
         <div class="flex justify-center">
-            <div class="animate__animated animate__bounceInRight animate__delay-faster bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center">
+            <div
+                class="animate__animated animate__bounceInRight animate__delay-faster bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center">
                 <a href="#" class="text-gray-700 font-bold text-lg" id="changeLanguageBtn">EN</a>
             </div>
         </div>

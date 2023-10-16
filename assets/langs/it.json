@@ -13,7 +13,7 @@
         "arduinoDescription": "Il nucleo centrale che controlla tutto il sistema",
         "bluetoothTitle": "Modulo Bluetooth",
         "bluetoothDescription": "Un modulo che permette di collegare il manubrio al gioco",
-        "batteryTitle": "Batteria da 300mAh",
+        "batteryTitle": "Batteria da 700mAh",
         "batteryDescription": "Una batteria che non ti abbandona mai"
     },
     "about": {
@@ -22,7 +22,7 @@
     },
     "game": {
         "title": "Il gioco",
-        "description": "Graie"
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ipsum nisi, dapibus quis tincidunt non, vulputate nec justo. Phasellus fermentum sem a nulla porta aliquam. Aenean diam eros, dapibus eu odio in, malesuada iaculis enim. Vestibulum ex ipsum, faucibus vel iaculis vel, luctus quis ipsum. Ut ullamcorper varius faucibus. Ut bibendum molestie vehicula. Suspendisse viverra elementum orci, sit amet ornare dui tincidunt non. Phasellus aliquet justo nec sapien dapibus, sed faucibus arcu porttitor. Curabitur placerat bibendum purus a euismod. In eu nunc sed augue ullamcorper viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean mattis neque lectus, ut commodo felis condimentum a. Vivamus dapibus erat et pretium elementum. Quisque augue lacus, faucibus nec quam sit amet, tempor pulvinar augue."
 
     },
     "chargingStation": {
