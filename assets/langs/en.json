@@ -22,12 +22,12 @@
     },
     "game": {
         "title": "The game",
-        "description": "Graie"
+        "description": "With our game, you will be able to choose different types of exercises. Daily {missions} will be available that, upon completion, will give you {points} with which you can decorate your character and buy food that can regenerate its life. The game is currently only available on Windows and Android, but will be available on more platforms in the future."
 
 
     },
     "chargingStation": {
-        "title": "Non restare mai senza batteria",
-        "description": "Grazie alla potentissima "
+        "title": "Never run out of battery",
+        "description": "Thanks to the 700mAh battery, Smart Dumbbells can be used for {more than 10 hours} without recharging. When the battery runs out, simply (place the dumbbell on the charging base) and it will be charged in about 2½ hours."
     }
 }

@@ -22,11 +22,11 @@
     },
     "game": {
         "title": "Il gioco",
-        "description": "Grazie al nostro rivoluzionario gioco, sarà possibile scegliere diversi tipi di esercizi. Saranno disponibili delle {missioni giornaliere} che al completamento daranno dei (punti) con i quali si potrà abbellire il proprio personaggio e comprare cibo in grado di rigenerare la vita. Il gioco attualemente è disponibile solo su Windows e Android, ma in futuro sarà pubblicato su più piattaforme."
+        "description": "Con il nostro gioco, sarà possibile scegliere diversi tipi di esercizi. Saranno disponibili delle {missioni giornaliere} che, al completamento, daranno dei (punti) con i quali si potrà abbellire il proprio personaggio e comprare cibo in grado di rigenerare la vita. Il gioco attualemente è disponibile solo su Windows e Android, ma in futuro sarà pubblicato su più piattaforme."
 
     },
     "chargingStation": {
         "title": "Non restare mai senza batteria",
-        "description": "Grazie alla potentissima "
+        "description": "Grazie alla batteria da 700mAh, Smart Dumbbells può essere utilizzato per {più di 10 ore} senza doverlo ricaricare. Quando la batteria si scaricherà, basterà semplicemente (appoggiare il manubrio sulla base di ricarica) e sarà carico in circa 2 ore e mezza."
     }
 }
