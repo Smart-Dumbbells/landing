@@ -22,7 +22,7 @@
     },
     "game": {
         "title": "Il gioco",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ipsum nisi, dapibus quis tincidunt non, vulputate nec justo. Phasellus fermentum sem a nulla porta aliquam. Aenean diam eros, dapibus eu odio in, malesuada iaculis enim. Vestibulum ex ipsum, faucibus vel iaculis vel, luctus quis ipsum. Ut ullamcorper varius faucibus. Ut bibendum molestie vehicula. Suspendisse viverra elementum orci, sit amet ornare dui tincidunt non. Phasellus aliquet justo nec sapien dapibus, sed faucibus arcu porttitor. Curabitur placerat bibendum purus a euismod. In eu nunc sed augue ullamcorper viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean mattis neque lectus, ut commodo felis condimentum a. Vivamus dapibus erat et pretium elementum. Quisque augue lacus, faucibus nec quam sit amet, tempor pulvinar augue."
+        "description": "Grazie al nostro rivoluzionario gioco, sarà possibile scegliere diversi tipi di esercizi. Saranno disponibili delle {missioni giornaliere} che al completamento daranno dei (punti) con i quali si potrà abbellire il proprio personaggio e comprare cibo in grado di rigenerare la vita. Il gioco attualemente è disponibile solo su Windows e Android, ma in futuro sarà pubblicato su più piattaforme."
 
     },
     "chargingStation": {
