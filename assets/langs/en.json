@@ -12,8 +12,8 @@
         "arduinoTitle": "Arduino Nano",
         "arduinoDescription": "The central nucleus that controls the whole system",
         "bluetoothTitle": "Bluetooth module",
-        "bluetoothDescription": "Un modulo che permette di collegare il manubrio al gioco",
-        "batteryTitle": "700mAh battery",
+        "bluetoothDescription": "A module that allows you to connect the dumbbell to the game",
+        "batteryTitle": "600mAh battery",
         "batteryDescription": "A battery that will never let you down"
     },
     "about": {
@@ -28,6 +28,6 @@
     },
     "chargingStation": {
         "title": "Never run out of battery",
-        "description": "Thanks to the 700mAh battery, Smart Dumbbells can be used for {more than 10 hours} without recharging. When the battery runs out, simply (place the dumbbell on the charging base) and it will be charged in about 2½ hours."
+        "description": "Thanks to the 600mAh battery, Smart Dumbbells can be used for {more than 10 hours} without recharging. When the battery runs out, simply (place the dumbbell on the charging base) and it will be charged in about 2½ hours. Furthermore, the charging base is equipped with a USB-C port."
     }
 }

@@ -13,7 +13,7 @@
         "arduinoDescription": "Il nucleo centrale che controlla tutto il sistema",
         "bluetoothTitle": "Modulo Bluetooth",
         "bluetoothDescription": "Un modulo che permette di collegare il manubrio al gioco",
-        "batteryTitle": "Batteria da 700mAh",
+        "batteryTitle": "Batteria da 600mAh",
         "batteryDescription": "Una batteria che non ti abbandona mai"
     },
     "about": {
@@ -27,6 +27,6 @@
     },
     "chargingStation": {
         "title": "Non restare mai senza batteria",
-        "description": "Grazie alla batteria da 700mAh, Smart Dumbbells può essere utilizzato per {più di 10 ore} senza doverlo ricaricare. Quando la batteria si scaricherà, basterà semplicemente (appoggiare il manubrio sulla base di ricarica) e sarà carico in circa 2 ore e mezza."
+        "description": "Grazie alla batteria da 600mAh, Smart Dumbbells può essere utilizzato per {più di 10 ore} senza doverlo ricaricare. Quando la batteria si scaricherà, basterà semplicemente (appoggiare il manubrio sulla base di ricarica) e sarà carico in circa 2 ore e mezza. Inoltre la base di ricarica è dotata di una porta USB-C."
     }
 }
